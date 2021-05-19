@@ -334,7 +334,7 @@
 
 "@plasmicapp/cli@^0.1.149":
   version "0.1.149"
-  resolved "https://registry.npmjs.org/@plasmicapp/cli/-/cli-0.1.149.tgz"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.149.tgz#9624c0a8b1f5b8f63cf5ddcfd4ff1e68eb65d5f8"
   integrity sha512-BWdU1kAymdIi0lY5RjRZ0jgtojlKu4KEAJ/Sz/KFkT4rj23uRhJd2q32FtJnITrDuh+gW92RkkT+4fcoIoAM4w==
   dependencies:
     "@babel/core" "^7.12.3"
