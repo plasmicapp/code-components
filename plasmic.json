@@ -1,0 +1,122 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+      "projectName": "Code component examples",
+      "version": "latest",
+      "cssFilePath": "plasmic/code_component_examples/plasmic_code_component_examples.module.css",
+      "components": [
+        {
+          "id": "9K6Sk2ST166Ni",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "3oILK2v_-pyvd",
+          "name": "HomeHeader",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicHomeHeader.tsx",
+          "importSpec": {
+            "modulePath": "HomeHeader.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicHomeHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "UmnocbxlOe4RY",
+          "name": "ListItem",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicListItem.tsx",
+          "importSpec": {
+            "modulePath": "ListItem.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicListItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wGo48tXf46AUw",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "l6RtOq3VZBTR1",
+          "name": "Description",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicDescription.tsx",
+          "importSpec": {
+            "modulePath": "Description.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicDescription.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "bD0dbNOKNGywZ",
+          "name": "PlasmicLogoIcon",
+          "moduleFilePath": "plasmic/code_component_examples/icons/PlasmicIcon__PlasmicLogo.tsx"
+        }
+      ],
+      "images": [],
+      "projectApiToken": "TwiTi9V7cZzJn5j4jSpwZizlBPrDiQQh0T3hybnGtbPaHCsxBnv26Tp53atqTywSvXuXxpYpDa5Y2fqA"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "AeNTI-zK4Ow6K",
+        "name": "Screen",
+        "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+        "contextFilePath": "plasmic/code_component_examples/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.149",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.149/dist/plasmic.schema.json"
+}
