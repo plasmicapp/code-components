@@ -372,8 +372,6 @@ function PlasmicHome__RenderFunc(props: {
                         { id: 4, x: 39, y: 55 },
                         { id: 5, x: 25, y: 94 },
                         { id: 6, x: 36, y: 78 },
-                        { id: 7, x: 43, y: 46 },
-                        { id: 8, x: 37, y: 41 },
                         { id: 9, x: 33, y: 69 }
                       ]}
                     />
