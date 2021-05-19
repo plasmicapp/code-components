@@ -362,7 +362,7 @@ function PlasmicHome__RenderFunc(props: {
                     <VerticalBarSeries
                       data-plasmic-name={"barSeries"}
                       data-plasmic-override={overrides.barSeries}
-                      barWidth={3 as const}
+                      barWidth={1 as const}
                       className={classNames("__wab_instance", sty.barSeries)}
                       data={[
                         { id: 0, x: 12, y: 30 },
@@ -372,7 +372,7 @@ function PlasmicHome__RenderFunc(props: {
                         { id: 4, x: 39, y: 55 },
                         { id: 5, x: 25, y: 94 },
                         { id: 6, x: 36, y: 78 },
-                        { id: 9, x: 33, y: 69 }
+                        { id: 7, x: 33, y: 69 }
                       ]}
                     />
                   </XYPlot>
