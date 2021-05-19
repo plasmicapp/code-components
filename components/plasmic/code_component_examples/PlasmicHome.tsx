@@ -201,7 +201,7 @@ function PlasmicHome__RenderFunc(props: {
                   data-plasmic-name={"menu"}
                   data-plasmic-override={overrides.menu}
                   className={classNames("__wab_instance", sty.menu)}
-                  selectedKeys={["opt3"]}
+                  defaultSelectedKeys={["opt3"]}
                 >
                   <MenuItem
                     className={classNames(
@@ -337,46 +337,44 @@ function PlasmicHome__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.listItem__dL0Ja)}
                 title={"Bar Series + XY Plot"}
               >
-                {true ? (
-                  <XYPlot
-                    data-plasmic-name={"xyPlot"}
-                    data-plasmic-override={overrides.xyPlot}
-                    className={classNames("__wab_instance", sty.xyPlot)}
-                    height={200 as const}
-                    width={200 as const}
-                    xDomain={[10, 50]}
-                    yDomain={[0, 100]}
-                  >
-                    <XAxis
-                      data-plasmic-name={"xAxis"}
-                      data-plasmic-override={overrides.xAxis}
-                      className={classNames("__wab_instance", sty.xAxis)}
-                    />
+                <XYPlot
+                  data-plasmic-name={"xyPlot"}
+                  data-plasmic-override={overrides.xyPlot}
+                  className={classNames("__wab_instance", sty.xyPlot)}
+                  height={200 as const}
+                  width={200 as const}
+                  xDomain={[10, 50]}
+                  yDomain={[0, 100]}
+                >
+                  <XAxis
+                    data-plasmic-name={"xAxis"}
+                    data-plasmic-override={overrides.xAxis}
+                    className={classNames("__wab_instance", sty.xAxis)}
+                  />
 
-                    <YAxis
-                      data-plasmic-name={"yAxis"}
-                      data-plasmic-override={overrides.yAxis}
-                      className={classNames("__wab_instance", sty.yAxis)}
-                    />
+                  <YAxis
+                    data-plasmic-name={"yAxis"}
+                    data-plasmic-override={overrides.yAxis}
+                    className={classNames("__wab_instance", sty.yAxis)}
+                  />
 
-                    <VerticalBarSeries
-                      data-plasmic-name={"barSeries"}
-                      data-plasmic-override={overrides.barSeries}
-                      barWidth={1 as const}
-                      className={classNames("__wab_instance", sty.barSeries)}
-                      data={[
-                        { id: 0, x: 12, y: 30 },
-                        { id: 1, x: 29, y: 46 },
-                        { id: 2, x: 43, y: 60 },
-                        { id: 3, x: 16, y: 40 },
-                        { id: 4, x: 39, y: 55 },
-                        { id: 5, x: 25, y: 94 },
-                        { id: 6, x: 36, y: 78 },
-                        { id: 7, x: 33, y: 69 }
-                      ]}
-                    />
-                  </XYPlot>
-                ) : null}
+                  <VerticalBarSeries
+                    data-plasmic-name={"barSeries"}
+                    data-plasmic-override={overrides.barSeries}
+                    barWidth={1 as const}
+                    className={classNames("__wab_instance", sty.barSeries)}
+                    data={[
+                      { id: 0, x: 12, y: 30 },
+                      { id: 1, x: 29, y: 46 },
+                      { id: 2, x: 43, y: 60 },
+                      { id: 3, x: 16, y: 40 },
+                      { id: 4, x: 39, y: 55 },
+                      { id: 5, x: 25, y: 94 },
+                      { id: 6, x: 36, y: 78 },
+                      { id: 7, x: 33, y: 69 }
+                    ]}
+                  />
+                </XYPlot>
               </ListItem>
             </p.Stack>
 

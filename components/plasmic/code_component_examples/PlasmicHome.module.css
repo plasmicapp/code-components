@@ -103,6 +103,8 @@
 }
 .alert__nuj4J:global(.__wab_instance) {
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 .box__qCm7R {
   display: flex;
@@ -125,6 +127,8 @@
 .alert__bQk8E:global(.__wab_instance) {
   position: relative;
   margin-top: 19px;
+  width: 100%;
+  min-width: 0;
 }
 .listItem___2Iz78:global(.__wab_instance) {
   position: relative;
