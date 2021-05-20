@@ -165,7 +165,7 @@ function Host() {
   return (
     <div>
       <Head>
-        <script src="https://studio.plasmic/app/static/js/preamble.js"/>
+        <script src="https://studio.plasmic.app/static/js/preamble.js"/>
       </Head>
       {canvasHost}
     </div>
