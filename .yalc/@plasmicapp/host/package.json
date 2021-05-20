@@ -1,0 +1,33 @@
+{
+  "name": "@plasmicapp/host",
+  "version": "0.0.1+b6dcf333",
+  "description": "plasmic library for app hosting",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/host.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "dependencies": {
+    "mobx": "^5.15.4",
+    "mobx-react-lite": "^2.0.7",
+    "resize-observer-polyfill": "^1.5.1",
+    "slate": "^0.59.0",
+    "slate-react": "^0.59.0",
+    "window-or-global": "^1.0.1"
+  },
+  "peerDependencies": {
+    "@plasmicapp/react-web": ">= 0.2.45",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "yalcSig": "b6dcf3333a3b1f2cda56ce060e839a48"
+}

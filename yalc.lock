@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@plasmicapp/host": {
+      "signature": "b6dcf3333a3b1f2cda56ce060e839a48",
+      "file": true
+    }
+  }
+}
