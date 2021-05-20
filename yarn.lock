@@ -440,12 +440,11 @@
     slate-react "^0.59.0"
     window-or-global "^1.0.1"
 
-"@plasmicapp/react-web@^0.2.51":
-  version "0.2.51"
-  resolved "https://registry.npmjs.org/@plasmicapp/react-web/-/react-web-0.2.51.tgz"
-  integrity sha512-/1wec3e05a03i/EBNnid6mB6teWD4Y1DemnU41cOQqa2YDv2N063mfJa+fljghR8eIUNYYZfoJFeKzbVofT+Kw==
+"@plasmicapp/react-web@^0.2.53":
+  version "0.2.53"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.53.tgz#12ed168246d377c0bb74e8edf6c67bb3de11e582"
+  integrity sha512-JXdT8Bs6llXFDbgqfJDOblMkJsVoTjWKom8m8kTsLrNNEkgsk79it1u5qv6ckLsAo3ugj3WVfX9fQjHwdZt74w==
   dependencies:
-    "@react-spectrum/utils" "^3.5.1"
     classnames "^2.2.6"
     react-aria "^3.5.0"
     react-stately "^3.4.0"
@@ -843,18 +842,6 @@
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@react-google-maps/marker-clusterer/-/marker-clusterer-2.1.1.tgz#fa6cdcbbfee6a529a4d60b1575168a7aa1fedf91"
   integrity sha512-LIqf1T2dVXRaf/gqk/7kEDpRvr1aQGlqOv/p5zwZus3qI6/3qK4jxNpc89gQ2WkCMrGwcI/fTQrnI55BZCxsLA==
-
-"@react-spectrum/utils@^3.5.1":
-  version "3.5.2"
-  resolved "https://registry.npmjs.org/@react-spectrum/utils/-/utils-3.5.2.tgz"
-  integrity sha512-DQPqnzMzbRzzy3/3IQMekdzeWpEhhzCTt0Im5ge44nxPhtEaOwhlfBcc/SgvC15TmEZ7cLu7lXxQMJBdWwzXfQ==
-  dependencies:
-    "@babel/runtime" "^7.6.2"
-    "@react-aria/i18n" "^3.3.1"
-    "@react-aria/ssr" "^3.0.2"
-    "@react-aria/utils" "^3.8.0"
-    "@react-types/shared" "^3.6.0"
-    clsx "^1.1.1"
 
 "@react-stately/checkbox@^3.0.2":
   version "3.0.2"
