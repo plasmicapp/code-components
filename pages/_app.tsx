@@ -1,6 +1,8 @@
 import * as React from "react";
 import Head from "next/head";
 import "../styles/globals.css";
+import "antd/dist/antd.css";
+import "react-vis/dist/style.css";
 
 function MyApp({ Component, pageProps }) {
   return (

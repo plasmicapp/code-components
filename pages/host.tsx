@@ -13,8 +13,6 @@ import {
 } from "react-vis";
 import { GoogleMap } from "@react-google-maps/api";
 
-import "antd/dist/antd.css";
-import "react-vis/dist/style.css";
 import Head from "next/head";
 
 function Host() {
