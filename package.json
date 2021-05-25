@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@plasmicapp/cli": "^0.1.149",
-    "@plasmicapp/host": "file:.yalc/@plasmicapp/host",
+    "@plasmicapp/host": "^0.0.1",
     "@plasmicapp/react-web": "^0.2.53",
     "@react-google-maps/api": "^2.1.1",
     "@types/react": "^17.0.6",
