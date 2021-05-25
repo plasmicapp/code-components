@@ -157,7 +157,6 @@ function Host() {
       importName: "GoogleMap",
       classNameProp: "mapContainerClassName",
     });
-    document.querySelector("body").style.display = "contents";
     setCanvasHost(<PlasmicCanvasHost />);
   }, []);
   return (
