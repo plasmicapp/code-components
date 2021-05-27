@@ -430,10 +430,10 @@
     lodash "^4.17.19"
     prettier "^2.0.5"
 
-"@plasmicapp/host@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.1.tgz#d41ed6ab5acdb2f87d9bd23ecb1ead5c64c4cb4d"
-  integrity sha512-7heqpvV9LmKYjkMKmwMSy7GIXMHQEnLoy9Jm0Q5ORN7Ksat0UR79r2BLUmOsRSmTj2KG1bCIrGW8r+UCR84eRQ==
+"@plasmicapp/host@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.3.tgz#276a20388fa94d22870cbc18c819341873e482ed"
+  integrity sha512-XqUbBGizH+k1sooMnSAe9VU6heQepXcsUJ7ZVPvhFAi0rYAtXLsYBdCLYlCod6hOHbh6I3LV+DUPAeBzNq7rzg==
   dependencies:
     mobx "^5.15.4"
     mobx-react-lite "^2.0.7"
@@ -1298,6 +1298,22 @@
   version "15.7.3"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-vis@^1.11.6":
+  version "1.11.6"
+  resolved "https://registry.yarnpkg.com/@types/react-vis/-/react-vis-1.11.6.tgz#0de6c102b0419e6c049e3066c5b85b5d238d7a6d"
+  integrity sha512-om55tYHY7X3dPsIG0IKOi4Cu4FNjRqCXOgfVBcFNuHYLJIZ+Mzlc8uDy7YXNxLAqDOo6tabNIFeTvej2svy95g==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*":
+  version "17.0.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.8.tgz#fe76e3ba0fbb5602704110fd1e3035cf394778e3"
+  integrity sha512-3sx4c0PbXujrYAKwXxNONXUtRp9C+hE2di0IuxFyf5BELD+B+AXL8G7QrmSKhVwKZDbv0igiAjQAMhXj8Yg3aw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
 
 "@types/react@^17.0.6":
   version "17.0.6"
