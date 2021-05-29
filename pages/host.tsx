@@ -14,6 +14,7 @@ import {
 import { GoogleMap } from "@react-google-maps/api";
 
 import Head from "next/head";
+import { CmsGallery, ProductGallery } from "../components/ItemGallery";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -155,11 +156,33 @@ registerComponent(GoogleMap, {
   classNameProp: "mapContainerClassName",
 });
 
+registerComponent(ProductGallery, {
+  name: "ProductGallery",
+  props: {
+    count: "number",
+    scroller: "boolean",
+    category: "string",
+  },
+  importPath: "./components/ItemGallery",
+  importName: "CmsGallery",
+});
+
+registerComponent(CmsGallery, {
+  name: "CmsGallery",
+  props: {
+    count: "number",
+    scroller: "boolean",
+    category: "string",
+  },
+  importPath: "./components/ItemGallery",
+  importName: "CmsGallery",
+});
+
 function Host() {
   return (
     <div>
       <Head>
-        <script src="https://studio.plasmic.app/static/js/preamble.js"/>
+        <script src="https://studio.plasmic.app/static/js/preamble.js" />
       </Head>
       <PlasmicCanvasHost />
     </div>

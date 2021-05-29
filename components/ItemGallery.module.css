@@ -1,0 +1,66 @@
+.Gallery {
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+
+.Items {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Items__Scrolling {
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.Title {
+    font-size: large;
+}
+
+.Price {
+    font-size: xx-large;
+}
+
+.Thumb {
+    width: 100%;
+}
+
+.Item {
+    flex: 0 0 auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.ScrollBtn {
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 48px;
+    padding: 0 10px;
+    transition: background-color 0.2s;
+}
+
+.ScrollBtn:hover {
+    background: #eee;
+}
+
+.Caption {
+    position: absolute;
+    bottom: 25px;
+    left: 10px;
+    padding: 4px 12px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 16px;
+    backdrop-filter: blur(2px);
+    color: rgba(255,255,255,0.8);
+}
