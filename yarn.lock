@@ -430,13 +430,13 @@
     lodash "^4.17.19"
     prettier "^2.0.5"
 
-"@plasmicapp/host@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.3.tgz#276a20388fa94d22870cbc18c819341873e482ed"
-  integrity sha512-XqUbBGizH+k1sooMnSAe9VU6heQepXcsUJ7ZVPvhFAi0rYAtXLsYBdCLYlCod6hOHbh6I3LV+DUPAeBzNq7rzg==
+"@plasmicapp/host@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.6.tgz#e03ec4be9a745e6e13f7090c4914ef38d0c69a5a"
+  integrity sha512-Sd1gcx2FmJoyQn2540P86kFgPgJ/l9sJu4EF5cthxFu3IDExrC90VWJoNHFGnO6MXO0L3EQ5F7y7udJX0XmTuw==
   dependencies:
-    mobx "^5.15.4"
-    mobx-react-lite "^2.0.7"
+    mobx ">=5.15.4"
+    mobx-react-lite ">=2.0.7"
     resize-observer-polyfill "^1.5.1"
     slate "^0.59.0"
     slate-react "^0.59.0"
@@ -3350,15 +3350,15 @@ minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.5.tgz"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
-mobx-react-lite@^2.0.7:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-2.2.2.tgz#87c217dc72b4e47b22493daf155daf3759f868a6"
-  integrity sha512-2SlXALHIkyUPDsV4VTKVR9DW7K3Ksh1aaIv3NrNJygTbhXe2A9GrcKHZ2ovIiOp/BXilOcTYemfHHZubP431dg==
+mobx-react-lite@>=2.0.7:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-3.2.0.tgz#331d7365a6b053378dfe9c087315b4e41c5df69f"
+  integrity sha512-q5+UHIqYCOpBoFm/PElDuOhbcatvTllgRp3M1s+Hp5j0Z6XNgDbgqxawJ0ZAUEyKM8X1zs70PCuhAIzX1f4Q/g==
 
-mobx@^5.15.4:
-  version "5.15.7"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.15.7.tgz#b9a5f2b6251f5d96980d13c78e9b5d8d4ce22665"
-  integrity sha512-wyM3FghTkhmC+hQjyPGGFdpehrcX1KOXsDuERhfK2YbJemkUhEB+6wzEN639T21onxlfYBmriA1PFnvxTUhcKw==
+mobx@>=5.15.4:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-6.3.2.tgz#125590961f702a572c139ab69392bea416d2e51b"
+  integrity sha512-xGPM9dIE1qkK9Nrhevp0gzpsmELKU4MFUJRORW/jqxVFIHHWIoQrjDjL8vkwoJYY3C2CeVJqgvl38hgKTalTWg==
 
 moment@^2.24.0, moment@^2.25.3, moment@^2.27.0:
   version "2.29.1"
