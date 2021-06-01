@@ -3085,11 +3085,10 @@ export function ProductGallery({
 
 interface CmsGalleryProps {
   count?: number;
-  category?: string;
   scroller?: boolean;
 }
 
-export function CmsGallery({ ...rest }: CmsGalleryProps) {
+export function CmsGallery({ count, ...rest }: CmsGalleryProps) {
   const [data, setData] = useState<typeof exampleCmsData | undefined>(
     undefined
   );
@@ -3112,7 +3111,7 @@ export function CmsGallery({ ...rest }: CmsGalleryProps) {
   }, []);
   return (
     <ItemGallery {...rest} style={{ height: 180 }}>
-      {data?.items[1].fields.images.map((item) => {
+      {data?.items[1].fields.images.slice(count).map((item) => {
         const entry = data.includes.Entry.find(
           (i) => i.sys.id === item.sys.id
         )! as typeof data.includes.Entry[0];

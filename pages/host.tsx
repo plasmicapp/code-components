@@ -172,7 +172,6 @@ registerComponent(CmsGallery, {
   props: {
     count: "number",
     scroller: "boolean",
-    category: "string",
   },
   importPath: "./components/ItemGallery",
   importName: "CmsGallery",
