@@ -8,14 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "@arwes/animation": "^1.0.0-alpha.19",
+    "@arwes/core": "^1.0.0-alpha.19",
+    "@arwes/design": "^1.0.0-alpha.19",
+    "@arwes/sounds": "^1.0.0-alpha.19",
+    "@emotion/css": "^11.1.3",
+    "@emotion/react": "^11.4.0",
     "@material-ui/core": "^4.11.4",
     "@plasmicapp/cli": "^0.1.149",
     "@plasmicapp/host": "^0.0.6",
     "@plasmicapp/react-web": "^0.2.53",
     "@react-google-maps/api": "^2.1.1",
     "@types/react": "^17.0.6",
+    "animejs": "^3.2.1",
     "antd": "^4.15.6",
+    "howler": "^2.2.1",
     "next": "10.2.0",
+    "polished": "^4.1.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-vis": "^1.11.7",
@@ -24,6 +33,8 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
+    "@types/animejs": "^3.1.3",
+    "@types/howler": "^2.2.2",
     "@types/react-vis": "^1.11.6"
   }
 }

@@ -21,6 +21,8 @@ import Head from "next/head";
 import { CmsGallery, ProductGallery } from "../components/ItemGallery";
 import { MuiSelect } from "../components/MuiSelect";
 import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
+import { ArwesCard } from "../components/Arwes";
+import { Text } from "@arwes/core";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -240,6 +242,25 @@ registerComponent(CmsGallery, {
   },
   importPath: "./components/ItemGallery",
   importName: "CmsGallery",
+});
+
+registerComponent(ArwesCard, {
+  name: "ArwesCard",
+  props: {
+    children: "slot",
+  },
+  importPath: "./components/Arwes",
+  importName: "ArwesCard",
+});
+
+registerComponent(Text, {
+  name: "ArwesText",
+  props: {
+    children: "string",
+    as: "string",
+  },
+  importPath: "@arwes/core",
+  importName: "Text",
 });
 
 function Host() {
