@@ -1,6 +1,6 @@
 import * as React from "react";
 import { PlasmicCanvasHost, registerComponent } from "@plasmicapp/host";
-import { Alert, Collapse, Menu, Slider } from "antd";
+import { Alert, Carousel, Collapse, Menu, Slider } from "antd";
 import MenuItem from "antd/lib/menu/MenuItem";
 import CollapsePanel from "antd/lib/collapse/CollapsePanel";
 import YouTube from "react-youtube";
@@ -261,6 +261,14 @@ registerComponent(Text, {
   },
   importPath: "@arwes/core",
   importName: "Text",
+});
+
+registerComponent(Carousel, {
+  name: "Carousel",
+  props: {
+    children: "slot",
+  },
+  importPath: "antd",
 });
 
 function Host() {
