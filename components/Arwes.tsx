@@ -44,7 +44,18 @@ export const ArwesCard = ({
         >
           <AnimatorGeneralProvider animator={generalAnimator}>
             <Animator animator={{ activate, manager: "stagger" }}>
-              <Text as="h1">Nebula</Text>
+              <Text
+                as="h1"
+                style={{
+                  fontWeight: "bold",
+                  color: "#00f8f8",
+                  textTransform: "uppercase",
+                  letterSpacing: 0.5,
+                  textShadow: `rgb(0 248 248) 0px 0px 2px`,
+                }}
+              >
+                Nebula
+              </Text>
               {children}
               <Text as="p">
                 A nebula is an interstellar cloud of dust, hydrogen, helium and
