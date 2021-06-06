@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
     "@plasmicapp/cli": "^0.1.149",
     "@plasmicapp/host": "^0.0.6",
     "@plasmicapp/react-web": "^0.2.53",

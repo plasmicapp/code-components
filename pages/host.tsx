@@ -1,20 +1,25 @@
 import * as React from "react";
-import { registerComponent, PlasmicCanvasHost } from "@plasmicapp/host";
-import { Slider, Menu, Collapse, Alert } from "antd";
+import { PlasmicCanvasHost, registerComponent } from "@plasmicapp/host";
+import { Alert, Collapse, Menu, Slider } from "antd";
 import MenuItem from "antd/lib/menu/MenuItem";
 import CollapsePanel from "antd/lib/collapse/CollapsePanel";
 import YouTube from "react-youtube";
 import {
   RadialChart,
-  XYPlot,
-  XAxis,
-  YAxis,
   VerticalBarSeries,
+  XAxis,
+  XYPlot,
+  YAxis,
 } from "react-vis";
 import { GoogleMap } from "@react-google-maps/api";
+import {
+  Button as MuiButton,
+  ButtonGroup as MuiButtonGroup,
+} from "@material-ui/core";
 
 import Head from "next/head";
 import { CmsGallery, ProductGallery } from "../components/ItemGallery";
+import { MuiSelect } from "../components/MuiSelect";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -154,6 +159,41 @@ registerComponent(GoogleMap, {
   importPath: "@react-google-maps/api",
   importName: "GoogleMap",
   classNameProp: "mapContainerClassName",
+});
+
+registerComponent(MuiSelect, {
+  name: "MuiSelect",
+  props: {
+    defaultValue: "string",
+    options: "object",
+    label: "string",
+  },
+  importPath: "./components/MuiSelect",
+  importName: "Select",
+});
+
+registerComponent(MuiButtonGroup, {
+  name: "MuiButtonGroup",
+  props: {
+    color: "string",
+    variant: "string",
+    children: "slot",
+  },
+  importPath: "@material-ui/core",
+  importName: "ButtonGroup",
+});
+
+registerComponent(MuiButton, {
+  name: "MuiButton",
+  props: {
+    children: "slot",
+    disabled: "boolean",
+    color: "string",
+    variant: "string",
+    href: "string",
+  },
+  importPath: "@material-ui/core",
+  importName: "Button",
 });
 
 registerComponent(ProductGallery, {
