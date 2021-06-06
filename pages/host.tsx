@@ -23,6 +23,7 @@ import { MuiSelect } from "../components/MuiSelect";
 import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 import { ArwesCard } from "../components/Arwes";
 import { Text } from "@arwes/core";
+import { Embed } from "../components/Embed";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -269,6 +270,14 @@ registerComponent(Carousel, {
     children: "slot",
   },
   importPath: "antd",
+});
+
+registerComponent(Embed, {
+  name: "Embed",
+  props: {
+    code: "string",
+  },
+  importPath: "./components/Embed",
 });
 
 function Host() {
