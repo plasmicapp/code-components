@@ -20,6 +20,7 @@ import {
 import Head from "next/head";
 import { CmsGallery, ProductGallery } from "../components/ItemGallery";
 import { MuiSelect } from "../components/MuiSelect";
+import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -196,6 +197,30 @@ registerComponent(MuiButton, {
   importName: "Button",
 });
 
+registerComponent(DynWiredButton, {
+  name: "WiredButton",
+  props: {
+    children: "string",
+    elevation: "number",
+    disabled: "boolean",
+  },
+  importPath: "./components/DynamicWired",
+  importName: "DynWiredButton",
+});
+
+registerComponent(DynWiredIconButton, {
+  name: "WiredIconButton",
+  props: {
+    icon: "string",
+    iconSize: "number",
+    iconColor: "string",
+    lineColor: "string",
+    disabled: "boolean",
+  },
+  importPath: "./components/DynamicWired",
+  importName: "DynWiredIconButton",
+});
+
 registerComponent(ProductGallery, {
   name: "ProductGallery",
   props: {
@@ -222,6 +247,10 @@ function Host() {
     <div>
       <Head>
         <script src="https://studio.plasmic.app/static/js/preamble.js" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+          rel="stylesheet"
+        />
       </Head>
       <PlasmicCanvasHost />
     </div>
