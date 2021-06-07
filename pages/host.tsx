@@ -26,6 +26,8 @@ import { Text } from "@arwes/core";
 import { Embed } from "../components/Embed";
 import ReactParallaxTilt from "react-parallax-tilt";
 import { Tilt } from "../components/Tilt";
+import { Parallax } from "react-scroll-parallax";
+import { ParallaxWrapper } from "../components/ParallaxWrapper";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -311,6 +313,18 @@ registerComponent(Tilt, {
     children: "slot",
   },
   importPath: "./components/Tilt",
+});
+
+registerComponent(ParallaxWrapper, {
+  name: "Parallax",
+  props: {
+    x: "object",
+    y: "object",
+    disabled: "boolean",
+    children: "slot",
+  },
+  importPath: "./components/ParallaxWrapper",
+  importName: "ParallaxWrapper",
 });
 
 function Host() {
