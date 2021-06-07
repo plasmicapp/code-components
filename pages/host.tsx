@@ -28,6 +28,7 @@ import ReactParallaxTilt from "react-parallax-tilt";
 import { Tilt } from "../components/Tilt";
 import { Parallax } from "react-scroll-parallax";
 import { ParallaxWrapper } from "../components/ParallaxWrapper";
+import { Reveal } from "../components/Reveal";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -325,6 +326,23 @@ registerComponent(ParallaxWrapper, {
   },
   importPath: "./components/ParallaxWrapper",
   importName: "ParallaxWrapper",
+});
+
+registerComponent(Reveal, {
+  name: "Reveal",
+  props: {
+    children: "slot",
+    effect: "string",
+    cascade: "boolean",
+    damping: "boolean",
+    direction: "string",
+    delay: "number",
+    duration: "number",
+    fraction: "number",
+    triggerOnce: "boolean",
+  },
+  importPath: "./components/Reveal",
+  importName: "Reveal",
 });
 
 function Host() {
