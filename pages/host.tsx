@@ -24,6 +24,8 @@ import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 import { ArwesCard } from "../components/Arwes";
 import { Text } from "@arwes/core";
 import { Embed } from "../components/Embed";
+import ReactParallaxTilt from "react-parallax-tilt";
+import { Tilt } from "../components/Tilt";
 
 registerComponent(Slider, {
   name: "Slider",
@@ -278,6 +280,37 @@ registerComponent(Embed, {
     code: "string",
   },
   importPath: "./components/Embed",
+});
+
+registerComponent(Tilt, {
+  name: "Tilt",
+  props: {
+    tiltEnable: "boolean",
+    tiltReverse: "boolean",
+    tiltAngleXInitial: "number",
+    tiltAngleYInitial: "number",
+    tiltMaxAngleX: "number",
+    tiltMaxAngleY: "number",
+    tiltAxis: "string",
+    tiltAngleXManual: "number",
+    tiltAngleYManual: "number",
+    glareEnable: "boolean",
+    glareMaxOpacity: "number",
+    glareColor: "string",
+    glareBorderRadius: "number",
+    glarePosition: "string",
+    scale: "number",
+    perspective: "number",
+    flipVertically: "boolean",
+    flipHorizontally: "boolean",
+    reset: "boolean",
+    transitionEasing: "string",
+    transitionSpeed: "number",
+    trackOnWindow: "boolean",
+    gyroscope: "boolean",
+    children: "slot",
+  },
+  importPath: "./components/Tilt",
 });
 
 function Host() {
