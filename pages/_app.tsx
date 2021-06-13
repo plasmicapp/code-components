@@ -4,8 +4,9 @@ import "../styles/globals.css";
 import "antd/dist/antd.css";
 import "react-vis/dist/style.css";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
