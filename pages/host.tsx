@@ -253,7 +253,9 @@ registerComponent(CmsGallery, {
 registerComponent(ArwesCard, {
   name: "ArwesCard",
   props: {
+    caption: "slot",
     children: "slot",
+    title: "slot",
   },
   importPath: "./components/Arwes",
   importName: "ArwesCard",

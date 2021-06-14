@@ -18,3 +18,7 @@ a {
 .inner-element {
   transform: translateZ(20px);
 }
+
+.Arwes img {
+  max-width: 100%;
+}

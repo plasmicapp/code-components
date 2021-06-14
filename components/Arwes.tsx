@@ -1,7 +1,10 @@
-import React, { useState, ReactNode } from "react";
+import React, { useState, ReactNode, useRef, useEffect } from "react";
 import { AnimatorGeneralProvider, Animator } from "@arwes/animation";
 import { BleepsProvider } from "@arwes/sounds";
 import { ArwesThemeProvider, StylesBaseline, Text, Figure } from "@arwes/core";
+import { useIntersection } from "react-use";
+import { ensure } from "../src/common";
+
 // For the font-family to work, you would have to setup the Google Fonts link:
 // <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" />
 const ROOT_FONT_FAMILY = '"Titillium Web", sans-serif';
@@ -22,11 +25,35 @@ const generalAnimator = { duration: { enter: 200, exit: 200 } };
 export const ArwesCard = ({
   className,
   children,
+  caption,
+  title,
 }: {
   className?: string;
   children?: ReactNode;
+  caption?: ReactNode;
+  title?: ReactNode;
 }) => {
-  const [activate, setActivate] = useState(true);
+  const footerElt = useRef<HTMLDivElement>(null);
+  const intersection = useIntersection(footerElt, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  });
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        console.log(entries);
+      },
+      { root: null, rootMargin: "0px", threshold: 1.0 }
+    );
+    observer.observe(ensure(footerElt.current));
+  }, []);
+  const activate = intersection?.isIntersecting;
+  console.log(
+    activate,
+    intersection?.isIntersecting,
+    intersection?.boundingClientRect.top
+  );
   return (
     <div
       className={"Arwes " + className}
@@ -36,59 +63,37 @@ export const ArwesCard = ({
         fontFamily: ROOT_FONT_FAMILY,
       }}
     >
-      <ArwesThemeProvider>
-        <BleepsProvider
-          audioSettings={audioSettings}
-          playersSettings={playersSettings}
-          bleepsSettings={bleepsSettings}
-        >
-          <AnimatorGeneralProvider animator={generalAnimator}>
-            <Animator animator={{ activate, manager: "stagger" }}>
-              <Text
-                as="h1"
-                style={{
-                  fontWeight: "bold",
-                  color: "#00f8f8",
-                  textTransform: "uppercase",
-                  letterSpacing: 0.5,
-                  textShadow: `rgb(0 248 248) 0px 0px 2px`,
-                }}
-              >
-                Nebula
-              </Text>
-              {children}
-              <Text as="p">
-                A nebula is an interstellar cloud of dust, hydrogen, helium and
-                other ionized gases. Originally, the term was used to describe
-                any diffused astronomical object, including galaxies beyond the
-                Milky Way. The Andromeda Galaxy, for instance, was once referred
-                to as the Andromeda Nebula (and spiral galaxies in general as
-                "spiral nebulae") before the true nature of galaxies was
-                confirmed in the early 20th century by Vesto Slipher, Edwin
-                Hubble and others.
-              </Text>
-              <Figure src={IMAGE_URL} alt="A nebula">
-                A nebula is an interstellar cloud of dust, hydrogen, helium and
-                other ionized gases. Originally, the term was used to describe
-                any diffused astronomical object, including galaxies beyond the
-                Milky Way.
-              </Figure>
-              <Text as="p">
-                Most nebulae are of vast size; some are hundreds of light-years
-                in diameter. A nebula that is visible to the human eye from
-                Earth would appear larger, but no brighter, from close by. The
-                Orion Nebula, the brightest nebula in the sky and occupying an
-                area twice the angular diameter of the full Moon, can be viewed
-                with the naked eye but was missed by early astronomers. Although
-                denser than the space surrounding them, most nebulae are far
-                less dense than any vacuum created on Earth – a nebular cloud
-                the size of the Earth would have a total mass of only a few
-                kilograms.
-              </Text>
-            </Animator>
-          </AnimatorGeneralProvider>
-        </BleepsProvider>
-      </ArwesThemeProvider>
+      {process.browser && (
+        <ArwesThemeProvider>
+          <BleepsProvider
+            audioSettings={audioSettings}
+            playersSettings={playersSettings}
+            bleepsSettings={bleepsSettings}
+          >
+            <AnimatorGeneralProvider animator={generalAnimator}>
+              <Animator animator={{ activate, manager: "stagger" }}>
+                <Text
+                  as="h1"
+                  style={{
+                    fontWeight: "bold",
+                    color: "#00f8f8",
+                    textTransform: "uppercase",
+                    letterSpacing: 0.5,
+                    textShadow: `rgb(0 248 248) 0px 0px 2px`,
+                  }}
+                >
+                  {title}
+                </Text>
+                <Text as="p">{children}</Text>
+                <Figure src={IMAGE_URL} alt="A nebula">
+                  {caption}
+                </Figure>
+              </Animator>
+            </AnimatorGeneralProvider>
+          </BleepsProvider>
+        </ArwesThemeProvider>
+      )}
+      <div ref={footerElt} />
     </div>
   );
 };
