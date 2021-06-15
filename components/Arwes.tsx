@@ -1,9 +1,10 @@
-import React, { useState, ReactNode, useRef, useEffect } from "react";
+import React, {useState, ReactNode, useRef, useEffect, useContext} from "react";
 import { AnimatorGeneralProvider, Animator } from "@arwes/animation";
 import { BleepsProvider } from "@arwes/sounds";
 import { ArwesThemeProvider, StylesBaseline, Text, Figure } from "@arwes/core";
 import { useIntersection } from "react-use";
 import { ensure } from "../src/common";
+import {PlasmicCanvasContext} from "@plasmicapp/host";
 
 // For the font-family to work, you would have to setup the Google Fonts link:
 // <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" />
@@ -33,6 +34,7 @@ export const ArwesCard = ({
   caption?: ReactNode;
   title?: ReactNode;
 }) => {
+  const inEditor = useContext(PlasmicCanvasContext);
   const footerElt = useRef<HTMLDivElement>(null);
   const intersection = useIntersection(footerElt, {
     root: null,
@@ -48,7 +50,7 @@ export const ArwesCard = ({
     );
     observer.observe(ensure(footerElt.current));
   }, []);
-  const activate = intersection?.isIntersecting;
+  const activate = inEditor || intersection?.isIntersecting;
   console.log(
     activate,
     intersection?.isIntersecting,
