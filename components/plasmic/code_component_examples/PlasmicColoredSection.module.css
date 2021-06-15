@@ -1,0 +1,13 @@
+.root {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+  background: linear-gradient(#000000, #000000) repeat, #ece5d4 repeat;
+}
+.slotChildren {
+  color: #ffffff;
+}

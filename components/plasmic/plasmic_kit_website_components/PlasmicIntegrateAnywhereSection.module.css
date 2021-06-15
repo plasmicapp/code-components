@@ -1,0 +1,165 @@
+.root:global(.__wab_instance) {
+  position: relative;
+}
+.box__dq3FL {
+  color: rgba(0, 0, 0, 0);
+  text-decoration-line: none;
+  text-overflow: clip;
+  background: linear-gradient(
+    333deg,
+    rgb(129, 77, 231) 0%,
+    rgb(178, 144, 245) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.box__global_theme_altHeadlineFont__dq3FLfQkvX {
+  font-family: "Poppins";
+}
+.img {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+}
+.box__wmfmL {
+  max-width: 1024px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.box__wmfmL > :global(.__wab_flex-container) {
+  flex-direction: column;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.box__wmfmL > :global(.__wab_flex-container) > *,
+.box__wmfmL > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 16px;
+}
+.box__b1B5L {
+  display: flex;
+}
+.box__b1B5L > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.box__b1B5L > :global(.__wab_flex-container) > *,
+.box__b1B5L > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 16px;
+}
+@media (min-width: 0px) and (max-width: 750px) {
+  .box__b1B5L {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 750px) {
+  .box__b1B5L > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 10px);
+    height: calc(100% + 10px);
+  }
+}
+@media (min-width: 0px) and (max-width: 750px) {
+  .box__b1B5L > :global(.__wab_flex-container) > *,
+  .box__b1B5L > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .box__b1B5L {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .box__b1B5L > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 16px);
+    height: calc(100% + 16px);
+  }
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .box__b1B5L > :global(.__wab_flex-container) > *,
+  .box__b1B5L > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+}
+.smallValuePropCard___5OEq2:global(.__wab_instance) {
+  position: relative;
+}
+.graphicIcon__aESkc:global(.__wab_instance) {
+  position: relative;
+}
+.svg__yIpf5 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(129, 77, 231) /* plasmic-token: TofnYUvxKNBJ */;
+}
+.linky__rrxnW:global(.__wab_instance) {
+  position: relative;
+}
+.box__npbY {
+  color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
+}
+.smallValuePropCard__w9JMy:global(.__wab_instance) {
+  position: relative;
+}
+.graphicIcon__kyAlF:global(.__wab_instance) {
+  position: relative;
+}
+.svg__hfGeZ {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(129, 77, 231) /* plasmic-token: TofnYUvxKNBJ */;
+}
+.linky___36ZV:global(.__wab_instance) {
+  position: relative;
+}
+.box__mKKz0 {
+  color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
+}
+.smallValuePropCard__cDi7:global(.__wab_instance) {
+  position: relative;
+}
+.graphicIcon__oDdo2:global(.__wab_instance) {
+  position: relative;
+}
+.svg__dGIjq {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(129, 77, 231) /* plasmic-token: TofnYUvxKNBJ */;
+}
+.linky__mqtUf:global(.__wab_instance) {
+  position: relative;
+}
+.box__jx66M {
+  color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
+}
+.smallValuePropCard__piE6Y:global(.__wab_instance) {
+  position: relative;
+}
+.graphicIcon__wjgud:global(.__wab_instance) {
+  position: relative;
+}
+.svg__eqwi9 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(129, 77, 231) /* plasmic-token: TofnYUvxKNBJ */;
+}
+.linky__hCj1:global(.__wab_instance) {
+  position: relative;
+}
+.box__ssfvJ {
+  color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
+}

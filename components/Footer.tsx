@@ -4,7 +4,7 @@ import * as React from "react";
 import {
   PlasmicFooter,
   DefaultFooterProps
-} from "./plasmic/code_component_examples/PlasmicFooter";
+} from "./plasmic/plasmic_kit_website_components/PlasmicFooter";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -22,7 +22,7 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // total control over the props for your component.
 interface FooterProps extends DefaultFooterProps {}
 
-function Footer_(props: FooterProps, ref: HTMLElementRefOf<"div">) {
+function Footer_(props: FooterProps, ref: HTMLElementRefOf<"section">) {
   // Use PlasmicFooter to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You

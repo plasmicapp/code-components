@@ -1,0 +1,113 @@
+.root:global(.__wab_instance) {
+  position: relative;
+}
+.box__boQLs {
+  color: rgba(0, 0, 0, 0);
+  text-decoration-line: none;
+  text-overflow: clip;
+  width: auto;
+  font-size: 48px;
+  line-height: 1.5em;
+  display: inline-block;
+  background: linear-gradient(
+    333deg,
+    rgb(255, 102, 191) 0%,
+    rgb(255, 158, 223) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.box__global_theme_altHeadlineFont__boQLsFQkvX {
+  font-family: "Poppins";
+}
+.svg___0Fc0K {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 102, 191) /* plasmic-token: JwjM4lx8p2A8 */;
+}
+.divider__z6XtX:global(.__wab_instance) {
+  position: relative;
+  height: 1px;
+}
+.svg___0BseX {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 102, 191) /* plasmic-token: JwjM4lx8p2A8 */;
+}
+.divider__oVnLw:global(.__wab_instance) {
+  position: relative;
+  height: 1px;
+}
+.svg__vlVjI {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 102, 191) /* plasmic-token: JwjM4lx8p2A8 */;
+}
+.box___8ZbOi {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box___8ZbOi > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.box___8ZbOi > :global(.__wab_flex-container) > *,
+.box___8ZbOi > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+.box__ow0I5 {
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+.box__jop0M {
+  position: relative;
+  color: #ffffff /* plasmic-token: nYyxDq6Rz */;
+  white-space: pre;
+}
+.link {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.svg__aMyDm {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: rgb(255, 255, 255) /* plasmic-token: maWCPk1v_oCK */;
+}
+.box__nVmFp {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 0;
+  border-radius: 16px;
+  background: rgb(30, 30, 30);
+}
+.img {
+  object-fit: contain;
+  width: 468px;
+  border-radius: 16px;
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  .img {
+    width: 100%;
+    min-width: 0;
+  }
+}

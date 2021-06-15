@@ -1,0 +1,78 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+.buttonLink__rF8T1:global(.__wab_instance) {
+  position: relative;
+}
+.box__k9D7E {
+  height: auto;
+}
+.svg__fp7Xm {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #4a4c4f;
+}
+.buttonLink__wOvzn:global(.__wab_instance) {
+  position: relative;
+}
+.box___0MOFa {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box___0MOFa > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.box___0MOFa > :global(.__wab_flex-container) > *,
+.box___0MOFa > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.box__mDfeL {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.box__dfsSm {
+  height: auto;
+}
+.box__fJluv {
+  height: auto;
+  font-family: "Bungee";
+}
+.svg__zuYzv {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+  color: #4a4c4f;
+}

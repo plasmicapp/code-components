@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C600%3B0%2C700%3B0%2C900&family=Poppins%3Aital%2Cwght%400%2C400%3B0%2C700&family=Bungee%3Aital%2Cwght%400%2C400&display=swap");
+.root_reset {
+  font-family: Inter;
+  font-size: medium;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(50, 52, 54) /* plasmic-token: T5L5Js4u0Cm */;
+  text-align: initial;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+}

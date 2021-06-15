@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  min-height: 0;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid rgb(79, 196, 251) /* plasmic-token: P2GhlSti3mm */;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 4px);
+  height: calc(100% + 4px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 4px;
+}
+.root:hover {
+  background: rgba(4, 164, 244, 0.05);
+}
+.slotChildren {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(0, 153, 230) /* plasmic-token: 7t3bUsmR2G1 */;
+}
+.slotSlot {
+  color: rgb(0, 153, 230) /* plasmic-token: 7t3bUsmR2G1 */;
+}

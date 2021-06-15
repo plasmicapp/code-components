@@ -1,0 +1,128 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-radius: 12px;
+  padding: 8px;
+}
+.root__colors_purple {
+  background: linear-gradient(
+    0deg,
+    rgb(129, 77, 231) 0%,
+    rgb(200, 178, 247) 100%
+  );
+}
+.root__colors_cyan {
+  background: linear-gradient(
+    0deg,
+    rgb(4, 164, 244) 0%,
+    rgb(198, 239, 255) 100%
+  );
+}
+.root__colors_orange {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 137, 47) 0%,
+    rgb(255, 204, 153) 100%
+  );
+}
+.root__colors_darkGraySolid {
+  background: rgb(74, 76, 79);
+}
+.root__colors_blue {
+  background: linear-gradient(
+    0deg,
+    rgb(24, 119, 242) 0%,
+    rgb(168, 209, 255) 100%
+  );
+}
+.root__colors_red {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 137, 47) 0%,
+    rgb(255, 204, 153) 100%
+  );
+}
+.root__colors_lightBlueSolid {
+  background: rgb(231, 243, 255);
+}
+.root__colors_lightPurpleSolid {
+  background: rgb(239, 232, 255);
+}
+.root__colors_lightPinkSolid {
+  background: rgb(255, 230, 247);
+}
+.root__colors_lightCoralSolid {
+  background: rgb(255, 230, 227);
+}
+.root__colors_lightOrangeSolid {
+  background: rgb(255, 233, 212);
+}
+.root__colors_teal {
+  background: linear-gradient(
+    0deg,
+    rgb(42, 187, 167) 0%,
+    rgb(208, 247, 242) 100%
+  );
+}
+.root__colors_lightYellowSolid {
+  background: rgb(255, 249, 209);
+}
+.root__colors_lightCyanSolid {
+  background: rgb(224, 247, 255);
+}
+.root__shape_circle {
+  border-radius: 50%;
+}
+.root__colors_green {
+  background: linear-gradient(
+    0deg,
+    rgb(69, 189, 98) 0%,
+    rgb(203, 249, 215) 100%
+  );
+}
+.root__colors_yellow {
+  background: linear-gradient(
+    0deg,
+    rgb(247, 185, 40) 0%,
+    rgb(255, 242, 166) 100%
+  );
+}
+.root__colors_pink {
+  background: linear-gradient(
+    0deg,
+    rgb(248, 137, 211) 0%,
+    rgb(255, 217, 242) 100%
+  );
+}
+.root__colors_coral {
+  background: linear-gradient(
+    0deg,
+    rgb(255, 137, 47) 0%,
+    rgb(255, 204, 153) 100%
+  );
+}
+.root__colors_white {
+  background: rgb(255, 255, 255) 0% 0% / auto auto repeat padding-box border-box
+    scroll;
+}
+.root__colors_gray {
+  background: linear-gradient(
+    0deg,
+    rgb(122, 125, 130) 0%,
+    rgb(201, 204, 209) 100%
+  );
+}
+.root__colors_lightGraySolid {
+  background: rgb(201, 204, 209);
+}
+.svg__eHrhH {
+  object-fit: cover;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 255, 255) /* plasmic-token: maWCPk1v_oCK */;
+  flex-shrink: 0;
+}

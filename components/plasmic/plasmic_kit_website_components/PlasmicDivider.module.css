@@ -1,0 +1,8 @@
+.root {
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: relative;
+  min-width: 0;
+  background: rgb(228, 230, 235);
+}

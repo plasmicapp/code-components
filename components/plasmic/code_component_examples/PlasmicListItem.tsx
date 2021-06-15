@@ -38,11 +38,18 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_code_component_examples.module.css"; // plasmic-import: aPZu6epBt5EaEYRgMF1d6z/projectcss
 import * as sty from "./PlasmicListItem.module.css"; // plasmic-import: UmnocbxlOe4RY/css
 
-export type PlasmicListItem__VariantMembers = {};
+export type PlasmicListItem__VariantMembers = {
+  noBody: "noBody";
+};
 
-export type PlasmicListItem__VariantsArgs = {};
+export type PlasmicListItem__VariantsArgs = {
+  noBody?: SingleBooleanChoiceArg<"noBody">;
+};
+
 type VariantPropType = keyof PlasmicListItem__VariantsArgs;
-export const PlasmicListItem__VariantProps = new Array<VariantPropType>();
+export const PlasmicListItem__VariantProps = new Array<VariantPropType>(
+  "noBody"
+);
 
 export type PlasmicListItem__ArgsType = {
   title?: React.ReactNode;
@@ -65,6 +72,7 @@ export interface DefaultListItemProps {
   title?: React.ReactNode;
   _package?: React.ReactNode;
   children?: React.ReactNode;
+  noBody?: SingleBooleanChoiceArg<"noBody">;
   className?: string;
 }
 
@@ -78,16 +86,22 @@ function PlasmicListItem__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   return (
-    <p.Stack
-      as={"div"}
+    <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
-      className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
+      className={classNames(defaultcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__noBody]: hasVariant(variants, "noBody", "noBody")
+      })}
     >
-      <div className={classNames(defaultcss.all, sty.box__bcBbs)}>
+      <p.Stack
+        as={"div"}
+        hasGap={true}
+        className={classNames(defaultcss.all, sty.box__bcBbs, {
+          [sty.box__noBody__bcBbstB2X]: hasVariant(variants, "noBody", "noBody")
+        })}
+      >
         {p.renderPlasmicSlot({
           defaultContents: "Component",
           value: args.title,
@@ -99,15 +113,26 @@ function PlasmicListItem__RenderFunc(props: {
           value: args._package,
           className: classNames(sty.slotPackage)
         })}
-      </div>
+      </p.Stack>
 
-      <div className={classNames(defaultcss.all, sty.box__h652A)}>
-        {p.renderPlasmicSlot({
-          defaultContents: "Show the components here",
-          value: args.children
-        })}
-      </div>
-    </p.Stack>
+      {(hasVariant(variants, "noBody", "noBody") ? false : true) ? (
+        <div
+          className={classNames(defaultcss.all, sty.box__h652A, {
+            [sty.box__noBody__h652AtB2X]: hasVariant(
+              variants,
+              "noBody",
+              "noBody"
+            )
+          })}
+        >
+          {p.renderPlasmicSlot({
+            defaultContents: "Show the components here",
+            value: args.children,
+            className: classNames(sty.slotChildren)
+          })}
+        </div>
+      ) : null}
+    </div>
   ) as React.ReactElement | null;
 }
 

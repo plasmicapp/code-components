@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin-top: calc(0px - 32px);
+  height: calc(100% + 32px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 32px;
+}
+.slotChildren {
+  font-size: 36px;
+}
+.box {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.box > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: calc(0px - 32px);
+  width: calc(100% + 32px);
+  margin-top: calc(0px - 32px);
+  height: calc(100% + 32px);
+}
+.box > :global(.__wab_flex-container) > *,
+.box > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 32px;
+  margin-top: 32px;
+}
+.listItem__yXu7G:global(.__wab_instance) {
+  position: relative;
+}
+.box__oTXjU {
+  height: auto;
+}
+.youTube__l8Xeb:global(.__wab_instance) {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}

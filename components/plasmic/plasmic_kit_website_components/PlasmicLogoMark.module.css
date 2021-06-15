@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.img {
+  object-fit: cover;
+  width: 56px;
+  height: 56px;
+  position: relative;
+  left: auto;
+  top: auto;
+  flex-shrink: 0;
+}

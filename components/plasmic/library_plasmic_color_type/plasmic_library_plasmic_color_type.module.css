@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C700&family=Poppins%3Aital%2Cwght%400%2C400%3B0%2C700&display=swap");
+.root_reset {
+  font-family: Inter;
+  font-size: medium;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  text-align: initial;
+  text-transform: none;
+  line-height: normal;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+}

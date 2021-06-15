@@ -1,0 +1,20 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 6px;
+  padding: 8px;
+  background: rgb(0, 153, 230);
+}
+.slotChildren {
+  color: rgb(134, 218, 255) /* plasmic-token: goIDDUrSACn */;
+}
+.svg__vXWxP {
+  position: relative;
+  object-fit: cover;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  flex-shrink: 0;
+}
