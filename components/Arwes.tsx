@@ -1,10 +1,16 @@
-import React, {useState, ReactNode, useRef, useEffect, useContext} from "react";
+import React, {
+  useState,
+  ReactNode,
+  useRef,
+  useEffect,
+  useContext,
+} from "react";
 import { AnimatorGeneralProvider, Animator } from "@arwes/animation";
 import { BleepsProvider } from "@arwes/sounds";
 import { ArwesThemeProvider, StylesBaseline, Text, Figure } from "@arwes/core";
 import { useIntersection } from "react-use";
 import { ensure } from "../src/common";
-import {PlasmicCanvasContext} from "@plasmicapp/host";
+import { PlasmicCanvasContext } from "@plasmicapp/host";
 
 // For the font-family to work, you would have to setup the Google Fonts link:
 // <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" />
@@ -50,7 +56,7 @@ export const ArwesCard = ({
     );
     observer.observe(ensure(footerElt.current));
   }, []);
-  const activate = inEditor || intersection?.isIntersecting;
+  const activate = intersection?.isIntersecting;
   console.log(
     activate,
     intersection?.isIntersecting,
@@ -65,8 +71,10 @@ export const ArwesCard = ({
         fontFamily: ROOT_FONT_FAMILY,
       }}
     >
-      {process.browser && (
-        <ArwesThemeProvider>
+      <ArwesThemeProvider>
+        {inEditor ? (
+          children
+        ) : (
           <BleepsProvider
             audioSettings={audioSettings}
             playersSettings={playersSettings}
@@ -74,27 +82,12 @@ export const ArwesCard = ({
           >
             <AnimatorGeneralProvider animator={generalAnimator}>
               <Animator animator={{ activate, manager: "stagger" }}>
-                <Text
-                  as="h1"
-                  style={{
-                    fontWeight: "bold",
-                    color: "#00f8f8",
-                    textTransform: "uppercase",
-                    letterSpacing: 0.5,
-                    textShadow: `rgb(0 248 248) 0px 0px 2px`,
-                  }}
-                >
-                  {title}
-                </Text>
-                <Text as="p">{children}</Text>
-                <Figure src={IMAGE_URL} alt="A nebula">
-                  {caption}
-                </Figure>
+                {children}
               </Animator>
             </AnimatorGeneralProvider>
           </BleepsProvider>
-        </ArwesThemeProvider>
-      )}
+        )}
+      </ArwesThemeProvider>
       <div ref={footerElt} />
     </div>
   );
