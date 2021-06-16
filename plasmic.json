@@ -431,7 +431,8 @@
       "icons": [],
       "images": [],
       "projectApiToken": "nPw276qGsy9kISQCHrcRrsj3Y9Yva9TMyYKNUpoOMOHgRj1A51qOC6LMB2185QlA52K87n32oQJHSi5be9w",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kjuFFTSZb8fanzCHT2C1jz",
@@ -1986,7 +1987,8 @@
         }
       ],
       "projectApiToken": "q9KAOlfNbBUEcKUMjcu7Gj2e5OQS6wnlhf3e6ZuLMHH0stHnFvkDLA1OtjXEVdeHJSALtHMtloMF5YVt8OWcww",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

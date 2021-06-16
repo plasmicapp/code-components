@@ -568,10 +568,10 @@
   resolved "https://registry.npmjs.org/@opentelemetry/context-base/-/context-base-0.14.0.tgz"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
-"@plasmicapp/cli@^0.1.153":
-  version "0.1.153"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.153.tgz#f80ec82e80fec2d633aa08f922d287a9e11b45f0"
-  integrity sha512-sBJeyllHyKu7DjUfCEn6zghUvGinzLUT9R9SMayGtwWjfLNKpDe63r0DaSMVjKlNtJI5cqO9brWSRC18l8tqYA==
+"@plasmicapp/cli@^0.1.154":
+  version "0.1.154"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/cli/-/cli-0.1.154.tgz#0502d751f908db092369fc20aeeeef2df3d02faa"
+  integrity sha512-B/ifm4P51EX6GaZrnulsiXuaOBcnkf/KkeCWlX8yD7M1AP6N/x32ILml67YW4SWyXLm4NHHr84x9WTUjnfMTpA==
   dependencies:
     "@babel/core" "^7.12.3"
     "@babel/generator" "^7.12.1"
