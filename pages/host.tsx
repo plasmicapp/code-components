@@ -236,7 +236,6 @@ registerComponent(ProductGallery, {
     category: "string",
   },
   importPath: "./components/ItemGallery",
-  importName: "CmsGallery",
 });
 
 registerComponent(CmsGallery, {
@@ -246,7 +245,6 @@ registerComponent(CmsGallery, {
     scroller: "boolean",
   },
   importPath: "./components/ItemGallery",
-  importName: "CmsGallery",
 });
 
 registerComponent(ArwesCard, {
