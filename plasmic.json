@@ -334,7 +334,7 @@
         },
         {
           "id": "jdQsBFXPKI",
-          "name": "CmsGallery",
+          "name": "ProductGallery",
           "componentImportPath": "./components/ItemGallery"
         },
         {

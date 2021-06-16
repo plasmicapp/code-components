@@ -49,8 +49,8 @@ import CollapsePanel from "antd/lib/collapse/CollapsePanel"; // plasmic-import: 
 import { ArwesCard } from "../../Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
 import { Text } from "@arwes/core"; // plasmic-import: bABh_9g4Xv/codeComponent
 import { Figure } from "@arwes/core"; // plasmic-import: 1v53456XNO/codeComponent
-import { CmsGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
-import { CmsGallery as CmsGallery2 } from "../../ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
+import { ProductGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
+import { CmsGallery } from "../../ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
 import { Reveal } from "../../Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
 import { Tilt } from "../../Tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
 import { ParallaxWrapper } from "../../ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
@@ -88,8 +88,8 @@ export type PlasmicHome__OverridesType = {
   arwesCard?: p.Flex<typeof ArwesCard>;
   h1?: p.Flex<"h1">;
   arwesFigure?: p.Flex<typeof Figure>;
-  productGallery?: p.Flex<typeof CmsGallery>;
-  cmsGallery?: p.Flex<typeof CmsGallery2>;
+  productGallery?: p.Flex<typeof ProductGallery>;
+  cmsGallery?: p.Flex<typeof CmsGallery>;
   reveal?: p.Flex<typeof Reveal>;
   tilt?: p.Flex<typeof Tilt>;
   embed?: p.Flex<typeof Embed>;
@@ -1179,7 +1179,7 @@ function PlasmicHome__RenderFunc(props: {
                     "Data from Shopify product catalog (via Storefront GraphQL API)"
                   }
                 >
-                  <CmsGallery
+                  <ProductGallery
                     data-plasmic-name={"productGallery"}
                     data-plasmic-override={overrides.productGallery}
                     className={classNames("__wab_instance", sty.productGallery)}
@@ -1194,7 +1194,7 @@ function PlasmicHome__RenderFunc(props: {
                 title={"Data from Contentful CMS (via REST API)"}
               >
                 <div className={classNames(defaultcss.all, sty.box__rUOaw)}>
-                  <CmsGallery2
+                  <CmsGallery
                     data-plasmic-name={"cmsGallery"}
                     data-plasmic-override={overrides.cmsGallery}
                     className={classNames("__wab_instance", sty.cmsGallery)}
@@ -1760,8 +1760,9 @@ const PlasmicDescendants = {
   linkButton: ["linkButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
-type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+type DescendantsType<
+  T extends NodeNameType
+> = typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   sectionHeading: typeof SectionHeading;
@@ -1769,8 +1770,8 @@ type NodeDefaultElementType = {
   arwesCard: typeof ArwesCard;
   h1: "h1";
   arwesFigure: typeof Figure;
-  productGallery: typeof CmsGallery;
-  cmsGallery: typeof CmsGallery2;
+  productGallery: typeof ProductGallery;
+  cmsGallery: typeof CmsGallery;
   reveal: typeof Reveal;
   tilt: typeof Tilt;
   embed: typeof Embed;
@@ -1783,26 +1784,24 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHome__OverridesType,
   DescendantsType<T>
 >;
-type NodeComponentProps<T extends NodeNameType> =
-  // Explicitly specify variants, args, and overrides as objects
-  {
-    variants?: PlasmicHome__VariantsArgs;
-    args?: PlasmicHome__ArgsType;
-    overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHome__Fetches;
-  } & Omit<PlasmicHome__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    // Specify args directly as props
-    Omit<PlasmicHome__ArgsType, ReservedPropsType> &
-    // Specify overrides for each element directly as props
-    Omit<
-      NodeOverridesType<T>,
-      ReservedPropsType | VariantPropType | ArgPropType
-    > &
-    // Specify props for the root element
-    Omit<
-      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-    >;
+type NodeComponentProps<T extends NodeNameType> = { // Explicitly specify variants, args, and overrides as objects
+  variants?: PlasmicHome__VariantsArgs;
+  args?: PlasmicHome__ArgsType;
+  overrides?: NodeOverridesType<T>;
+  dataFetches?: PlasmicHome__Fetches;
+} & Omit<PlasmicHome__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  // Specify args directly as props
+  Omit<PlasmicHome__ArgsType, ReservedPropsType> &
+  // Specify overrides for each element directly as props
+  Omit<
+    NodeOverridesType<T>,
+    ReservedPropsType | VariantPropType | ArgPropType
+  > &
+  // Specify props for the root element
+  Omit<
+    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+  >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };
