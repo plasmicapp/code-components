@@ -131,6 +131,11 @@ function PlasmicHome__RenderFunc(props: {
             "Plasmic is a page builder and design tool that lets you use React components from your codebase."
           }
         />
+        <meta
+          key="og:image"
+          property="og:image"
+          content={"/plasmic/code_component_examples/images/image15.png"}
+        />
       </Head>
 
       <style global jsx>{`
@@ -201,12 +206,18 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.box__n86Bu
+                      sty.box__tD1Xa
                     )}
                   >
-                    {
-                      "Introducing the web design tool that integrates seamlessly with your codebase."
-                    }
+                    <span>
+                      <React.Fragment>{"Introducing "}</React.Fragment>
+                      <span style={{ fontWeight: 700 }}>{"Plasmic 2.0"}</span>
+                      <React.Fragment>
+                        {
+                          ": the web design tool that integrates seamlessly with your codebase."
+                        }
+                      </React.Fragment>
+                    </span>
                   </div>
 
                   <div
@@ -242,9 +253,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.link___6MBo7
                   )}
                   component={Link}
-                  href={
-                    "https://studio.plasmic.app/projects/aPZu6epBt5EaEYRgMF1d6z" as const
-                  }
+                  href={"https://plasmic.app/projects/code-components" as const}
                   platform={"nextjs"}
                   target={"_blank" as const}
                 >
