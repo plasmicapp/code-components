@@ -22,7 +22,7 @@ import { CmsGallery, ProductGallery } from "../components/ItemGallery";
 import { MuiSelect } from "../components/MuiSelect";
 import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 import { ArwesCard } from "../components/Arwes";
-import { Text } from "@arwes/core";
+import { Figure, Text } from "@arwes/core";
 import { Embed } from "../components/Embed";
 import ReactParallaxTilt from "react-parallax-tilt";
 import { Tilt } from "../components/Tilt";
@@ -264,11 +264,22 @@ registerComponent(ArwesCard, {
 registerComponent(Text, {
   name: "ArwesText",
   props: {
-    children: "string",
+    children: "slot",
     as: "string",
   },
   importPath: "@arwes/core",
   importName: "Text",
+});
+
+registerComponent(Figure, {
+  name: "ArwesFigure",
+  props: {
+    children: "slot",
+    alt: "string",
+    src: "string",
+  },
+  importPath: "@arwes/core",
+  importName: "Figure",
 });
 
 registerComponent(Carousel, {
