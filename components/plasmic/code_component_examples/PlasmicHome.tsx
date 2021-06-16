@@ -344,7 +344,7 @@ function PlasmicHome__RenderFunc(props: {
                       )}
                     >
                       {
-                        "Use your own design system, or use off-the-shelf libraries complete with all the theming and customizations you've applied in your codebase. Seamlessly interleave Plasmic-designed content and code components."
+                        "Use your own design system, or use off-the-shelf libraries complete with all the theming and customizations you've applied in your codebase. Seamlessly interweave Plasmic-designed content and code components."
                       }
                     </div>
                   </p.Stack>
@@ -1575,10 +1575,34 @@ function PlasmicHome__RenderFunc(props: {
                   </span>
                   <React.Fragment>
                     {
-                      '. We call the Plasmic project "hosted" by your application. This tight integration is what lets you easily and seamlessly expose code components of arbitrary complexity. They can connect to your application state, fetch data, implement complex behavior, and much more. All without bundling shenanigans. You can set the app host to be your localhost dev server (complete with hot reload working!) or your actual production site.'
+                      '. We call the Plasmic project "hosted" by your application.'
                     }
                   </React.Fragment>
                 </span>
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box__oGPxq
+                )}
+              >
+                {
+                  "This tight integration is what lets you easily and seamlessly expose code components of arbitrary complexity. They can connect to your application state, fetch data, implement complex behavior, and much more. All without bundling shenanigans."
+                }
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.box___2VDhq
+                )}
+              >
+                {
+                  "You can set the app host to be your localhost dev server (complete with hot reload working!) OR your actual production site."
+                }
               </div>
 
               <div
@@ -1613,7 +1637,7 @@ function PlasmicHome__RenderFunc(props: {
                 platform={"nextjs"}
                 target={"_blank" as const}
               >
-                {"See developer docs -->"}
+                {"See developer docs ->"}
               </p.PlasmicLink>
 
               <p.PlasmicLink
@@ -1627,7 +1651,7 @@ function PlasmicHome__RenderFunc(props: {
                 platform={"nextjs"}
                 target={"_blank" as const}
               >
-                {"See this project's host repo on GitHub -->"}
+                {"See this project's host repo on GitHub ->"}
               </p.PlasmicLink>
             </p.Stack>
 
@@ -1661,7 +1685,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Plasmic powers some of the largest websites in the world. Companies from boutique brands to Fortune 500s use Plasmic to eliminate swaths of development work, and empower marketing and design teams to iterate incredibly fast."
+                    "Plasmic powers some of the largest websites in the world. Companies from boutique brands to Fortune 500s use Plasmic to eliminate swaths of development work and let marketing and design teams iterate incredibly fast."
                   }
                 </div>
 
@@ -1673,7 +1697,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                 >
                   {
-                    "And now with code components, developers can empower their whole team with the exact right set of building blocks to move even faster."
+                    "And now with code components, developers can equip their whole team with the exact right set of building blocks to move even faster."
                   }
                 </div>
 
