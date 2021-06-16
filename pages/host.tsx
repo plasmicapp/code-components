@@ -177,7 +177,7 @@ registerComponent(MuiSelect, {
     options: "object",
     label: "string",
   },
-  importPath: "./components/MuiSelect"
+  importPath: "./components/MuiSelect",
 });
 
 registerComponent(MuiButtonGroup, {
