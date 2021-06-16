@@ -221,7 +221,13 @@ function PlasmicHome__RenderFunc(props: {
                     }
                   </div>
                 </p.Stack>
+              </p.Stack>
 
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.box__xvRqV)}
+              >
                 <img
                   alt={""}
                   className={classNames(defaultcss.img, sty.img__iSdf)}
