@@ -229,8 +229,11 @@ function PlasmicHome__RenderFunc(props: {
                     sty.link___6MBo7
                   )}
                   component={Link}
-                  href={"#" as const}
+                  href={
+                    "https://studio.plasmic.app/projects/aPZu6epBt5EaEYRgMF1d6z" as const
+                  }
                   platform={"nextjs"}
+                  target={"_blank" as const}
                 >
                   {"Edit this page in Plasmic!"}
                 </p.PlasmicLink>
@@ -1283,29 +1286,62 @@ function PlasmicHome__RenderFunc(props: {
                           hasGap={true}
                           className={classNames(defaultcss.all, sty.box__ke7Zb)}
                         >
-                          <IconIcon
+                          <p.PlasmicLink
                             className={classNames(
                               defaultcss.all,
-                              sty.svg__n8OG6
+                              sty.link__z9HKn
                             )}
-                            role={"img"}
-                          />
+                            component={Link}
+                            href={"https://www.facebook.com/JayZ" as const}
+                            platform={"nextjs"}
+                            target={"_blank" as const}
+                          >
+                            <IconIcon
+                              className={classNames(
+                                defaultcss.all,
+                                sty.svg__n8OG6
+                              )}
+                              role={"img"}
+                            />
+                          </p.PlasmicLink>
 
-                          <Icon2Icon
+                          <p.PlasmicLink
                             className={classNames(
                               defaultcss.all,
-                              sty.svg__v4B89
+                              sty.link__yhLq
                             )}
-                            role={"img"}
-                          />
+                            component={Link}
+                            href={"https://twitter.com/sc?lang=en" as const}
+                            platform={"nextjs"}
+                            target={"_blank" as const}
+                          >
+                            <Icon2Icon
+                              className={classNames(
+                                defaultcss.all,
+                                sty.svg__v4B89
+                              )}
+                              role={"img"}
+                            />
+                          </p.PlasmicLink>
 
-                          <Icon3Icon
+                          <p.PlasmicLink
                             className={classNames(
                               defaultcss.all,
-                              sty.svg__owMl
+                              sty.link__nmU5
                             )}
-                            role={"img"}
-                          />
+                            component={Link}
+                            href={"https://lifeandtimes.com/" as const}
+                            platform={"nextjs"}
+                            target={"_blank" as const}
+                          >
+                            <Icon3Icon
+                              className={classNames(
+                                defaultcss.all,
+                                sty.svg__owMl
+                              )}
+                              role={"img"}
+                            />
+                          </p.PlasmicLink>
                         </p.Stack>
                       </p.Stack>
                     </Reveal>
@@ -1375,7 +1411,7 @@ function PlasmicHome__RenderFunc(props: {
                           "__wab_instance",
                           sty.parallax__mcQe
                         )}
-                        y={[-99, 99]}
+                        y={[-20, 20]}
                       >
                         <img
                           alt={""}
@@ -1547,6 +1583,7 @@ function PlasmicHome__RenderFunc(props: {
                   "https://docs.plasmic.app/learn/code-components/" as const
                 }
                 platform={"nextjs"}
+                target={"_blank" as const}
               >
                 {"See developer docs -->"}
               </p.PlasmicLink>
@@ -1560,6 +1597,7 @@ function PlasmicHome__RenderFunc(props: {
                 component={Link}
                 href={"https://github.com/plasmicapp/code-components" as const}
                 platform={"nextjs"}
+                target={"_blank" as const}
               >
                 {"See this project's host repo on GitHub -->"}
               </p.PlasmicLink>
@@ -1655,8 +1693,9 @@ function PlasmicHome__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.link__y6T83)}
                   component={Link}
-                  href={"#" as const}
+                  href={"https://twitter.com/plasmicapp" as const}
                   platform={"nextjs"}
+                  target={"_blank" as const}
                 >
                   <div
                     className={classNames(

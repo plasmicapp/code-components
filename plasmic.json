@@ -145,19 +145,6 @@
           "componentType": "component"
         },
         {
-          "id": "8TANbVpBXy",
-          "name": "Temp",
-          "type": "managed",
-          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
-          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicTemp.tsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page-3.tsx"
-          },
-          "cssFilePath": "plasmic/code_component_examples/PlasmicTemp.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "Yh0Ros8irE",
           "name": "Columns",
           "type": "managed",

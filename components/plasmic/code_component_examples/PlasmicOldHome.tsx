@@ -34,44 +34,20 @@ import {
 } from "@plasmicapp/react-web";
 import HomeHeader from "../../HomeHeader"; // plasmic-import: 3oILK2v_-pyvd/component
 import ListItem from "../../ListItem"; // plasmic-import: UmnocbxlOe4RY/component
-import YouTube from "react-youtube"; // plasmic-import: -IzJqW3d4U/codeComponent
-import { GoogleMap } from "@react-google-maps/api"; // plasmic-import: JpRCwVFY78Q/codeComponent
-import { Slider } from "antd"; // plasmic-import: qXDIYs1hPZ/codeComponent
-import { Menu } from "antd"; // plasmic-import: a0dmmmT9bh/codeComponent
-import MenuItem from "antd/lib/menu/MenuItem"; // plasmic-import: ZFeP1ZxmO_/codeComponent
-import { Collapse } from "antd"; // plasmic-import: HrrYx87CJM/codeComponent
-import CollapsePanel from "antd/lib/collapse/CollapsePanel"; // plasmic-import: yTjqZvpEeG/codeComponent
-import { Alert } from "antd"; // plasmic-import: zDhUktoIlT/codeComponent
 import { RadialChart } from "react-vis"; // plasmic-import: zQ6T7Q81cg/codeComponent
 import { XYPlot } from "react-vis"; // plasmic-import: klMWInag0f/codeComponent
 import { XAxis } from "react-vis"; // plasmic-import: UdxtqL9t93/codeComponent
 import { YAxis } from "react-vis"; // plasmic-import: OoewUcYk73/codeComponent
 import { VerticalBarSeries } from "react-vis"; // plasmic-import: 123d63LFaV/codeComponent
-import { MuiSelect } from "../../MuiSelect"; // plasmic-import: q21BzNeleG/codeComponent
-import { ButtonGroup } from "@material-ui/core"; // plasmic-import: jWGxxun6Nk/codeComponent
-import { Button } from "@material-ui/core"; // plasmic-import: ss7GdP3Fxg/codeComponent
 import { DynWiredButton } from "../../DynamicWired"; // plasmic-import: OgBn-UPRA2/codeComponent
 import { DynWiredIconButton } from "../../DynamicWired"; // plasmic-import: 79eFtA45IG/codeComponent
-import { ArwesCard } from "../../Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
-import { Text } from "@arwes/core"; // plasmic-import: bABh_9g4Xv/codeComponent
-import { CmsGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
-import { CmsGallery as CmsGallery2 } from "../../ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
-import { Carousel } from "antd"; // plasmic-import: BngnWU4ZqG/codeComponent
 import { Embed } from "../../Embed"; // plasmic-import: 1pPy7gsFYg/codeComponent
-import { Tilt } from "../../Tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
-import { ParallaxWrapper } from "../../ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
-import { Reveal } from "../../Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
 import Footer from "../../Footer"; // plasmic-import: wGo48tXf46AUw/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import * as projectcss from "./plasmic_code_component_examples.module.css"; // plasmic-import: aPZu6epBt5EaEYRgMF1d6z/projectcss
 import * as sty from "./PlasmicOldHome.module.css"; // plasmic-import: 9K6Sk2ST166Ni/css
-
-import PlasmicLogoIcon from "./icons/PlasmicIcon__PlasmicLogo"; // plasmic-import: bD0dbNOKNGywZ/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: MJwD_WwVrE/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: 2ftpiH3Dec/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: zw_Q1ZDL4y/icon
 
 export type PlasmicOldHome__VariantMembers = {};
 
@@ -87,26 +63,14 @@ export type PlasmicOldHome__OverridesType = {
   root?: p.Flex<"div">;
   homeHeader?: p.Flex<typeof HomeHeader>;
   container?: p.Flex<"div">;
-  youTube?: p.Flex<typeof YouTube>;
-  map?: p.Flex<typeof GoogleMap>;
-  slider?: p.Flex<typeof Slider>;
-  menu?: p.Flex<typeof Menu>;
-  collapse?: p.Flex<typeof Collapse>;
   radialChart?: p.Flex<typeof RadialChart>;
   xyPlot?: p.Flex<typeof XYPlot>;
   xAxis?: p.Flex<typeof XAxis>;
   yAxis?: p.Flex<typeof YAxis>;
   barSeries?: p.Flex<typeof VerticalBarSeries>;
-  muiSelect?: p.Flex<typeof MuiSelect>;
-  muiButtonGroup?: p.Flex<typeof ButtonGroup>;
   wiredButton?: p.Flex<typeof DynWiredButton>;
   wiredIconButton?: p.Flex<typeof DynWiredIconButton>;
-  arwesCard?: p.Flex<typeof ArwesCard>;
-  productGallery?: p.Flex<typeof CmsGallery>;
-  cmsGallery?: p.Flex<typeof CmsGallery2>;
-  carousel?: p.Flex<typeof Carousel>;
-  tilt?: p.Flex<typeof Tilt>;
-  reveal?: p.Flex<typeof Reveal>;
+  embed?: p.Flex<typeof Embed>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -173,192 +137,6 @@ function PlasmicOldHome__RenderFunc(props: {
               hasGap={true}
               className={classNames(defaultcss.all, sty.container)}
             >
-              <ListItem
-                _package={
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.box___33MxC
-                    )}
-                  >
-                    {"react-youtube"}
-                  </div>
-                }
-                className={classNames("__wab_instance", sty.listItem__tfkV)}
-                title={"Youtube"}
-              >
-                <YouTube
-                  data-plasmic-name={"youTube"}
-                  data-plasmic-override={overrides.youTube}
-                  className={classNames("__wab_instance", sty.youTube)}
-                  videoId={"R6MeLqRQzYw" as const}
-                />
-              </ListItem>
-
-              <ListItem
-                _package={"@react-google-maps/api"}
-                className={classNames("__wab_instance", sty.listItem__il7Xs)}
-                title={"Maps"}
-              >
-                <GoogleMap
-                  data-plasmic-name={"map"}
-                  data-plasmic-override={overrides.map}
-                  center={{ lat: -5, lng: -40 }}
-                  mapContainerClassName={classNames("__wab_instance", sty.map)}
-                  zoom={6 as const}
-                />
-              </ListItem>
-
-              <ListItem
-                _package={"antd"}
-                className={classNames("__wab_instance", sty.listItem__tChJd)}
-                title={"Slider"}
-              >
-                <Slider
-                  data-plasmic-name={"slider"}
-                  data-plasmic-override={overrides.slider}
-                  className={classNames("__wab_instance", sty.slider)}
-                  range={true}
-                  vertical={false}
-                />
-              </ListItem>
-
-              <ListItem
-                _package={"antd"}
-                className={classNames("__wab_instance", sty.listItem__el4De)}
-                title={"Menu"}
-              >
-                <Menu
-                  data-plasmic-name={"menu"}
-                  data-plasmic-override={overrides.menu}
-                  className={classNames("__wab_instance", sty.menu)}
-                  defaultSelectedKeys={["opt3"]}
-                >
-                  <MenuItem
-                    className={classNames(
-                      "__wab_instance",
-                      sty.menuItem___83QR3
-                    )}
-                    key={"opt1" as const}
-                  >
-                    {"Menu Option 1"}
-                  </MenuItem>
-
-                  <MenuItem
-                    className={classNames(
-                      "__wab_instance",
-                      sty.menuItem___1PLx
-                    )}
-                    key={"opt2" as const}
-                  >
-                    {"Menu Option 2"}
-                  </MenuItem>
-
-                  <MenuItem
-                    className={classNames(
-                      "__wab_instance",
-                      sty.menuItem__xo8Jv
-                    )}
-                    key={"opt3" as const}
-                  >
-                    {"Menu Option 3"}
-                  </MenuItem>
-                </Menu>
-              </ListItem>
-
-              <ListItem
-                _package={"antd"}
-                className={classNames("__wab_instance", sty.listItem__kfrAt)}
-                title={"Collapse"}
-              >
-                <Collapse
-                  data-plasmic-name={"collapse"}
-                  data-plasmic-override={overrides.collapse}
-                  className={classNames("__wab_instance", sty.collapse)}
-                  defaultActiveKey={["1"]}
-                >
-                  <CollapsePanel
-                    className={classNames(
-                      "__wab_instance",
-                      sty.collapsePanel___7XMTk
-                    )}
-                    header={"My collapse header" as const}
-                    key={"1" as const}
-                  >
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
-                        sty.box__nEjKg
-                      )}
-                    >
-                      {"First collapse contents!"}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
-                        sty.box__tIkVt
-                      )}
-                    >
-                      {"First collapse contents!"}
-                    </div>
-                  </CollapsePanel>
-
-                  <CollapsePanel
-                    className={classNames(
-                      "__wab_instance",
-                      sty.collapsePanel__and7C
-                    )}
-                    header={"My other collapse panel" as const}
-                    key={"2" as const}
-                  >
-                    {"More super fancy content"}
-                  </CollapsePanel>
-                </Collapse>
-              </ListItem>
-
-              <ListItem
-                _package={"antd"}
-                className={classNames("__wab_instance", sty.listItem__peCqW)}
-                title={"Alert"}
-              >
-                <Alert
-                  className={classNames("__wab_instance", sty.alert__nuj4J)}
-                  description={
-                    <div className={classNames(defaultcss.all, sty.box__qCm7R)}>
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.box__q6Thx
-                        )}
-                      >
-                        {"Description goes here! "}
-                      </div>
-
-                      <PlasmicLogoIcon
-                        className={classNames(defaultcss.all, sty.svg__weL27)}
-                        role={"img"}
-                      />
-                    </div>
-                  }
-                  message={"So cooooool!" as const}
-                  showIcon={true}
-                  type={"success" as const}
-                />
-
-                <Alert
-                  className={classNames("__wab_instance", sty.alert__bQk8E)}
-                  description={":("}
-                  message={"Ooops" as const}
-                  showIcon={true}
-                  type={"error" as const}
-                />
-              </ListItem>
-
               <ListItem
                 _package={"react-vis"}
                 className={classNames("__wab_instance", sty.listItem___2Iz78)}
@@ -428,73 +206,6 @@ function PlasmicOldHome__RenderFunc(props: {
               </ListItem>
 
               <ListItem
-                _package={"@material-ui/core"}
-                className={classNames("__wab_instance", sty.listItem__onS3R)}
-                title={"MUI"}
-              >
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.box__atVTf)}
-                >
-                  <MuiSelect
-                    data-plasmic-name={"muiSelect"}
-                    data-plasmic-override={overrides.muiSelect}
-                    className={classNames("__wab_instance", sty.muiSelect)}
-                    label={"Delivery method" as const}
-                    options={[
-                      { value: "standard", label: "Standard Shipping" },
-                      { value: "expedited", label: "Expedited Shipping" },
-                      { value: "sameday", label: "Same-Day Delivery" },
-                      { value: "pickup", label: "Scheduled Pickup" }
-                    ]}
-                  />
-
-                  <ButtonGroup
-                    data-plasmic-name={"muiButtonGroup"}
-                    data-plasmic-override={overrides.muiButtonGroup}
-                    className={classNames("__wab_instance", sty.muiButtonGroup)}
-                  >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.muiButton___8YZ94
-                      )}
-                    >
-                      {"md"}
-                    </Button>
-
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.muiButton___6Dg4W
-                      )}
-                    >
-                      {"lg"}
-                    </Button>
-
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.muiButton__tbecB
-                      )}
-                    >
-                      {"xl"}
-                    </Button>
-
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.muiButton__xtLk
-                      )}
-                    >
-                      {"xxl"}
-                    </Button>
-                  </ButtonGroup>
-                </p.Stack>
-              </ListItem>
-
-              <ListItem
                 _package={"react-wired-elements"}
                 className={classNames("__wab_instance", sty.listItem___0BE4)}
                 title={"Wired Elements"}
@@ -520,279 +231,19 @@ function PlasmicOldHome__RenderFunc(props: {
               </ListItem>
 
               <ListItem
-                _package={"@arwes/core"}
-                className={classNames("__wab_instance", sty.listItem__al6Ag)}
-                title={"Arwes"}
-              >
-                <div className={classNames(defaultcss.all, sty.box___5IiNb)}>
-                  <ArwesCard
-                    data-plasmic-name={"arwesCard"}
-                    data-plasmic-override={overrides.arwesCard}
-                    className={classNames("__wab_instance", sty.arwesCard)}
-                  >
-                    <Text
-                      as={"p" as const}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.arwesText__ixzzB
-                      )}
-                    />
-
-                    <Text
-                      as={"p" as const}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.arwesText__vsnUc
-                      )}
-                    />
-                  </ArwesCard>
-                </div>
-              </ListItem>
-
-              <ListItem
-                _package={"@arwes/core"}
-                className={classNames("__wab_instance", sty.listItem__wf7Ff)}
-                title={"Data"}
-              >
-                <div className={classNames(defaultcss.all, sty.box__bLlfD)}>
-                  <CmsGallery
-                    data-plasmic-name={"productGallery"}
-                    data-plasmic-override={overrides.productGallery}
-                    className={classNames("__wab_instance", sty.productGallery)}
-                    scroller={true}
-                  />
-
-                  <CmsGallery2
-                    data-plasmic-name={"cmsGallery"}
-                    data-plasmic-override={overrides.cmsGallery}
-                    className={classNames("__wab_instance", sty.cmsGallery)}
-                    scroller={true}
-                  />
-                </div>
-              </ListItem>
-
-              <ListItem
-                _package={"antd"}
-                className={classNames("__wab_instance", sty.listItem__nhTo7)}
-                title={"Carousel"}
-              >
-                <div className={classNames(defaultcss.all, sty.box__kNBo)}>
-                  <Carousel
-                    data-plasmic-name={"carousel"}
-                    data-plasmic-override={overrides.carousel}
-                    className={classNames("__wab_instance", sty.carousel)}
-                  >
-                    <div className={classNames(defaultcss.all, sty.box___78YN)}>
-                      <div
-                        className={classNames(defaultcss.all, sty.box__yeGth)}
-                      >
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.box__h1Gg
-                          )}
-                        >
-                          {"1"}
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className={classNames(defaultcss.all, sty.box__jkoKh)}>
-                      <div
-                        className={classNames(defaultcss.all, sty.box__iykq7)}
-                      >
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.box___1Ys8E
-                          )}
-                        >
-                          {"2"}
-                        </div>
-                      </div>
-                    </div>
-                  </Carousel>
-                </div>
-              </ListItem>
-
-              <ListItem
                 _package={null}
                 className={classNames("__wab_instance", sty.listItem___678Dp)}
                 title={"Embed"}
               >
                 <div className={classNames(defaultcss.all, sty.box__qc6Nn)}>
                   <Embed
-                    className={classNames("__wab_instance", sty.embed__pQfeb)}
+                    data-plasmic-name={"embed"}
+                    data-plasmic-override={overrides.embed}
+                    className={classNames("__wab_instance", sty.embed)}
                     code={
                       '<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYFrjwk3GZLI0SVbJq0miRfvd1Zq_VDQTR3pWdlt2M1aDQuER9_7iKfvOb9lGKucHVGpGhOaeeWW1l/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>' as const
                     }
                   />
-
-                  <Embed
-                    className={classNames("__wab_instance", sty.embed__jiYYy)}
-                    code={
-                      '<a class="twitter-timeline" href="https://twitter.com/TwitterDev/lists/national-parks?ref_src=twsrc%5Etfw">A Twitter List by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>' as const
-                    }
-                  />
-                </div>
-              </ListItem>
-
-              <ListItem
-                _package={"react-parallax-tilt"}
-                className={classNames("__wab_instance", sty.listItem__jHyjI)}
-                title={"Parallax Tilt"}
-              >
-                <div className={classNames(defaultcss.all, sty.box__hAs4C)}>
-                  <Tilt
-                    data-plasmic-name={"tilt"}
-                    data-plasmic-override={overrides.tilt}
-                    className={classNames("__wab_instance", sty.tilt)}
-                    tiltReverse={true}
-                    trackOnWindow={true}
-                  >
-                    <div className={classNames(defaultcss.all, sty.box__koyLo)}>
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          sty.box__fVa2P,
-                          "inner-element" as const
-                        )}
-                      />
-                    </div>
-                  </Tilt>
-                </div>
-              </ListItem>
-
-              <ListItem
-                _package={"react-scroll-parallax"}
-                className={classNames("__wab_instance", sty.listItem___5KOaN)}
-                title={"Parallax Scroll"}
-              >
-                <div className={classNames(defaultcss.all, sty.box__mDcj)}>
-                  <ParallaxWrapper
-                    className={classNames("__wab_instance", sty.parallax__dQYo)}
-                    y={[-99, 99]}
-                  >
-                    <img
-                      alt={""}
-                      className={classNames(defaultcss.img, sty.img__bsPUs)}
-                      role={"img"}
-                      src={"/plasmic/code_component_examples/images/image6.png"}
-                    />
-                  </ParallaxWrapper>
-
-                  <ParallaxWrapper
-                    className={classNames(
-                      "__wab_instance",
-                      sty.parallax___28Ais
-                    )}
-                    y={[40, -40]}
-                  >
-                    <img
-                      alt={""}
-                      className={classNames(defaultcss.img, sty.img__mxLo)}
-                      role={"img"}
-                      src={"/plasmic/code_component_examples/images/image5.png"}
-                    />
-                  </ParallaxWrapper>
-
-                  <ParallaxWrapper
-                    className={classNames(
-                      "__wab_instance",
-                      sty.parallax__bR5Vd
-                    )}
-                    y={[-20, 20]}
-                  >
-                    <img
-                      alt={""}
-                      className={classNames(defaultcss.img, sty.img__bbNi4)}
-                      role={"img"}
-                      src={"/plasmic/code_component_examples/images/image7.png"}
-                    />
-                  </ParallaxWrapper>
-
-                  <ParallaxWrapper
-                    className={classNames(
-                      "__wab_instance",
-                      sty.parallax__p7Zg3
-                    )}
-                    y={[99, -99]}
-                  >
-                    <img
-                      alt={""}
-                      className={classNames(defaultcss.img, sty.img__ozqoJ)}
-                      role={"img"}
-                      src={"/plasmic/code_component_examples/images/image8.png"}
-                    />
-                  </ParallaxWrapper>
-                </div>
-              </ListItem>
-
-              <ListItem
-                _package={"react-reveal"}
-                className={classNames("__wab_instance", sty.listItem__d1Up0)}
-                title={"Reveal"}
-              >
-                <div className={classNames(defaultcss.all, sty.box__jmfbj)}>
-                  <Reveal
-                    data-plasmic-name={"reveal"}
-                    data-plasmic-override={overrides.reveal}
-                    cascade={true}
-                    className={classNames("__wab_instance", sty.reveal)}
-                    direction={"up" as const}
-                    effect={"fade" as const}
-                  >
-                    <div className={classNames(defaultcss.all, sty.box__rKjWf)}>
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.box__nfF
-                        )}
-                      >
-                        {"JAY-Z"}
-                      </div>
-                    </div>
-
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(defaultcss.all, sty.box___323Cv)}
-                    >
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          defaultcss.__wab_text,
-                          sty.box__hG7X
-                        )}
-                      >
-                        {"FOLLOW ARTIST"}
-                      </div>
-
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(defaultcss.all, sty.box__fuc83)}
-                      >
-                        <IconIcon
-                          className={classNames(defaultcss.all, sty.svg__oMvtP)}
-                          role={"img"}
-                        />
-
-                        <Icon2Icon
-                          className={classNames(defaultcss.all, sty.svg__uWw5F)}
-                          role={"img"}
-                        />
-
-                        <Icon3Icon
-                          className={classNames(defaultcss.all, sty.svg__p87X1)}
-                          role={"img"}
-                        />
-                      </p.Stack>
-                    </p.Stack>
-                  </Reveal>
                 </div>
               </ListItem>
             </p.Stack>
@@ -814,72 +265,36 @@ const PlasmicDescendants = {
     "root",
     "homeHeader",
     "container",
-    "youTube",
-    "map",
-    "slider",
-    "menu",
-    "collapse",
     "radialChart",
     "xyPlot",
     "xAxis",
     "yAxis",
     "barSeries",
-    "muiSelect",
-    "muiButtonGroup",
     "wiredButton",
     "wiredIconButton",
-    "arwesCard",
-    "productGallery",
-    "cmsGallery",
-    "carousel",
-    "tilt",
-    "reveal",
+    "embed",
     "footer"
   ],
   homeHeader: ["homeHeader"],
   container: [
     "container",
-    "youTube",
-    "map",
-    "slider",
-    "menu",
-    "collapse",
     "radialChart",
     "xyPlot",
     "xAxis",
     "yAxis",
     "barSeries",
-    "muiSelect",
-    "muiButtonGroup",
     "wiredButton",
     "wiredIconButton",
-    "arwesCard",
-    "productGallery",
-    "cmsGallery",
-    "carousel",
-    "tilt",
-    "reveal"
+    "embed"
   ],
-  youTube: ["youTube"],
-  map: ["map"],
-  slider: ["slider"],
-  menu: ["menu"],
-  collapse: ["collapse"],
   radialChart: ["radialChart"],
   xyPlot: ["xyPlot", "xAxis", "yAxis", "barSeries"],
   xAxis: ["xAxis"],
   yAxis: ["yAxis"],
   barSeries: ["barSeries"],
-  muiSelect: ["muiSelect"],
-  muiButtonGroup: ["muiButtonGroup"],
   wiredButton: ["wiredButton"],
   wiredIconButton: ["wiredIconButton"],
-  arwesCard: ["arwesCard"],
-  productGallery: ["productGallery"],
-  cmsGallery: ["cmsGallery"],
-  carousel: ["carousel"],
-  tilt: ["tilt"],
-  reveal: ["reveal"],
+  embed: ["embed"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -889,26 +304,14 @@ type NodeDefaultElementType = {
   root: "div";
   homeHeader: typeof HomeHeader;
   container: "div";
-  youTube: typeof YouTube;
-  map: typeof GoogleMap;
-  slider: typeof Slider;
-  menu: typeof Menu;
-  collapse: typeof Collapse;
   radialChart: typeof RadialChart;
   xyPlot: typeof XYPlot;
   xAxis: typeof XAxis;
   yAxis: typeof YAxis;
   barSeries: typeof VerticalBarSeries;
-  muiSelect: typeof MuiSelect;
-  muiButtonGroup: typeof ButtonGroup;
   wiredButton: typeof DynWiredButton;
   wiredIconButton: typeof DynWiredIconButton;
-  arwesCard: typeof ArwesCard;
-  productGallery: typeof CmsGallery;
-  cmsGallery: typeof CmsGallery2;
-  carousel: typeof Carousel;
-  tilt: typeof Tilt;
-  reveal: typeof Reveal;
+  embed: typeof Embed;
   footer: typeof Footer;
 };
 
@@ -975,26 +378,14 @@ export const PlasmicOldHome = Object.assign(
     // Helper components rendering sub-elements
     homeHeader: makeNodeComponent("homeHeader"),
     container: makeNodeComponent("container"),
-    youTube: makeNodeComponent("youTube"),
-    map: makeNodeComponent("map"),
-    slider: makeNodeComponent("slider"),
-    menu: makeNodeComponent("menu"),
-    collapse: makeNodeComponent("collapse"),
     radialChart: makeNodeComponent("radialChart"),
     xyPlot: makeNodeComponent("xyPlot"),
     xAxis: makeNodeComponent("xAxis"),
     yAxis: makeNodeComponent("yAxis"),
     barSeries: makeNodeComponent("barSeries"),
-    muiSelect: makeNodeComponent("muiSelect"),
-    muiButtonGroup: makeNodeComponent("muiButtonGroup"),
     wiredButton: makeNodeComponent("wiredButton"),
     wiredIconButton: makeNodeComponent("wiredIconButton"),
-    arwesCard: makeNodeComponent("arwesCard"),
-    productGallery: makeNodeComponent("productGallery"),
-    cmsGallery: makeNodeComponent("cmsGallery"),
-    carousel: makeNodeComponent("carousel"),
-    tilt: makeNodeComponent("tilt"),
-    reveal: makeNodeComponent("reveal"),
+    embed: makeNodeComponent("embed"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicOldHome
