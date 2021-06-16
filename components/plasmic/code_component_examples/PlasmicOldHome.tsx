@@ -47,20 +47,20 @@ import { XYPlot } from "react-vis"; // plasmic-import: klMWInag0f/codeComponent
 import { XAxis } from "react-vis"; // plasmic-import: UdxtqL9t93/codeComponent
 import { YAxis } from "react-vis"; // plasmic-import: OoewUcYk73/codeComponent
 import { VerticalBarSeries } from "react-vis"; // plasmic-import: 123d63LFaV/codeComponent
-import { Select } from "/home/runner/work/code-components/code-components/components/MuiSelect"; // plasmic-import: q21BzNeleG/codeComponent
+import { MuiSelect } from "../../MuiSelect"; // plasmic-import: q21BzNeleG/codeComponent
 import { ButtonGroup } from "@material-ui/core"; // plasmic-import: jWGxxun6Nk/codeComponent
 import { Button } from "@material-ui/core"; // plasmic-import: ss7GdP3Fxg/codeComponent
-import { DynWiredButton } from "/home/runner/work/code-components/code-components/components/DynamicWired"; // plasmic-import: OgBn-UPRA2/codeComponent
-import { DynWiredIconButton } from "/home/runner/work/code-components/code-components/components/DynamicWired"; // plasmic-import: 79eFtA45IG/codeComponent
-import { ArwesCard } from "/home/runner/work/code-components/code-components/components/Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
+import { DynWiredButton } from "../../DynamicWired"; // plasmic-import: OgBn-UPRA2/codeComponent
+import { DynWiredIconButton } from "../../DynamicWired"; // plasmic-import: 79eFtA45IG/codeComponent
+import { ArwesCard } from "../../Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
 import { Text } from "@arwes/core"; // plasmic-import: bABh_9g4Xv/codeComponent
-import { CmsGallery } from "/home/runner/work/code-components/code-components/components/ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
-import { CmsGallery as CmsGallery2 } from "/home/runner/work/code-components/code-components/components/ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
+import { CmsGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
+import { CmsGallery as CmsGallery2 } from "../../ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
 import { Carousel } from "antd"; // plasmic-import: BngnWU4ZqG/codeComponent
-import { Embed } from "/home/runner/work/code-components/code-components/components/Embed"; // plasmic-import: 1pPy7gsFYg/codeComponent
-import { Tilt } from "react-parallax-tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
-import { ParallaxWrapper } from "/home/runner/work/code-components/code-components/components/ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
-import { Reveal } from "/home/runner/work/code-components/code-components/components/Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
+import { Embed } from "../../Embed"; // plasmic-import: 1pPy7gsFYg/codeComponent
+import { Tilt } from "../../Tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
+import { ParallaxWrapper } from "../../ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
+import { Reveal } from "../../Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
 import Footer from "../../Footer"; // plasmic-import: wGo48tXf46AUw/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -97,7 +97,7 @@ export type PlasmicOldHome__OverridesType = {
   xAxis?: p.Flex<typeof XAxis>;
   yAxis?: p.Flex<typeof YAxis>;
   barSeries?: p.Flex<typeof VerticalBarSeries>;
-  muiSelect?: p.Flex<typeof Select>;
+  muiSelect?: p.Flex<typeof MuiSelect>;
   muiButtonGroup?: p.Flex<typeof ButtonGroup>;
   wiredButton?: p.Flex<typeof DynWiredButton>;
   wiredIconButton?: p.Flex<typeof DynWiredIconButton>;
@@ -437,7 +437,7 @@ function PlasmicOldHome__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.box__atVTf)}
                 >
-                  <Select
+                  <MuiSelect
                     data-plasmic-name={"muiSelect"}
                     data-plasmic-override={overrides.muiSelect}
                     className={classNames("__wab_instance", sty.muiSelect)}
@@ -536,9 +536,7 @@ function PlasmicOldHome__RenderFunc(props: {
                         "__wab_instance",
                         sty.arwesText__ixzzB
                       )}
-                    >
-                      {"Testing" as const}
-                    </Text>
+                    />
 
                     <Text
                       as={"p" as const}
@@ -546,9 +544,7 @@ function PlasmicOldHome__RenderFunc(props: {
                         "__wab_instance",
                         sty.arwesText__vsnUc
                       )}
-                    >
-                      {"aoesnuthaoesnuthaoesnut" as const}
-                    </Text>
+                    />
                   </ArwesCard>
                 </div>
               </ListItem>
@@ -903,7 +899,7 @@ type NodeDefaultElementType = {
   xAxis: typeof XAxis;
   yAxis: typeof YAxis;
   barSeries: typeof VerticalBarSeries;
-  muiSelect: typeof Select;
+  muiSelect: typeof MuiSelect;
   muiButtonGroup: typeof ButtonGroup;
   wiredButton: typeof DynWiredButton;
   wiredIconButton: typeof DynWiredIconButton;

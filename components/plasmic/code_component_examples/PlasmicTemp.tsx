@@ -32,8 +32,9 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ArwesCard } from "/home/runner/work/code-components/code-components/components/Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
-import { Tilt } from "react-parallax-tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
+import { Tilt } from "../../Tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
+import { CmsGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
+import { GoogleMap } from "@react-google-maps/api"; // plasmic-import: JpRCwVFY78Q/codeComponent
 
 import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: AeNTI-zK4Ow6K/globalVariant
 
@@ -54,8 +55,9 @@ export const PlasmicTemp__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicTemp__OverridesType = {
   root?: p.Flex<"div">;
-  arwesCard?: p.Flex<typeof ArwesCard>;
   tilt?: p.Flex<typeof Tilt>;
+  productGallery?: p.Flex<typeof CmsGallery>;
+  map?: p.Flex<typeof GoogleMap>;
 };
 
 export interface DefaultTempProps {
@@ -95,26 +97,20 @@ function PlasmicTemp__RenderFunc(props: {
       `}</style>
 
       <div className={defaultcss.plasmic_page_wrapper}>
-        <div
+        <p.Stack
+          as={"div"}
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
+          hasGap={true}
           className={classNames(
             defaultcss.all,
             projectcss.root_reset,
             sty.root
           )}
         >
-          <ArwesCard
-            data-plasmic-name={"arwesCard"}
-            data-plasmic-override={overrides.arwesCard}
-            className={classNames("__wab_instance", sty.arwesCard)}
-          >
-            {"Hello world!"}
-          </ArwesCard>
-
-          <div className={classNames(defaultcss.all, sty.box__ecQsv)}>
+          <div className={classNames(defaultcss.all, sty.box__m0Ci)}>
             <Tilt
               data-plasmic-name={"tilt"}
               data-plasmic-override={overrides.tilt}
@@ -123,11 +119,11 @@ function PlasmicTemp__RenderFunc(props: {
               tiltReverse={true}
               trackOnWindow={false}
             >
-              <div className={classNames(defaultcss.all, sty.box__sz5N)}>
+              <div className={classNames(defaultcss.all, sty.box__rec)}>
                 <div
                   className={classNames(
                     defaultcss.all,
-                    sty.box__bo1TY,
+                    sty.box__x2UQy,
                     hasVariant(globalVariants, "screen", "mobile")
                       ? ("inner-element" as const)
                       : ("inner-element" as const)
@@ -136,24 +132,43 @@ function PlasmicTemp__RenderFunc(props: {
               </div>
             </Tilt>
           </div>
-        </div>
+
+          <CmsGallery
+            data-plasmic-name={"productGallery"}
+            data-plasmic-override={overrides.productGallery}
+            className={classNames("__wab_instance", sty.productGallery)}
+            scroller={
+              hasVariant(globalVariants, "screen", "mobile") ? true : true
+            }
+          />
+
+          <GoogleMap
+            data-plasmic-name={"map"}
+            data-plasmic-override={overrides.map}
+            center={{ lat: -5, lng: -40 }}
+            mapContainerClassName={classNames("__wab_instance", sty.map)}
+            zoom={6 as const}
+          />
+        </p.Stack>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "arwesCard", "tilt"],
-  arwesCard: ["arwesCard"],
-  tilt: ["tilt"]
+  root: ["root", "tilt", "productGallery", "map"],
+  tilt: ["tilt"],
+  productGallery: ["productGallery"],
+  map: ["map"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  arwesCard: typeof ArwesCard;
   tilt: typeof Tilt;
+  productGallery: typeof CmsGallery;
+  map: typeof GoogleMap;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -217,8 +232,9 @@ export const PlasmicTemp = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    arwesCard: makeNodeComponent("arwesCard"),
     tilt: makeNodeComponent("tilt"),
+    productGallery: makeNodeComponent("productGallery"),
+    map: makeNodeComponent("map"),
 
     // Metadata about props expected for PlasmicTemp
     internalVariantProps: PlasmicTemp__VariantProps,

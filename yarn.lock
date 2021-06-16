@@ -620,17 +620,23 @@
     lodash "^4.17.19"
     prettier "^2.0.5"
 
-"@plasmicapp/host@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.6.tgz#e03ec4be9a745e6e13f7090c4914ef38d0c69a5a"
-  integrity sha512-Sd1gcx2FmJoyQn2540P86kFgPgJ/l9sJu4EF5cthxFu3IDExrC90VWJoNHFGnO6MXO0L3EQ5F7y7udJX0XmTuw==
+"@plasmicapp/host@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-0.0.14.tgz#83ff485e40af81920db566a258f764b832990c4e"
+  integrity sha512-f/jVObNCoLODVxE75P+464JmwVr7TMlJU6/2p7njXxMY1egiaK0cBX9yTLjTberY+Uy5o9hpefuTa0ZOWNKm3w==
   dependencies:
+    "@plasmicapp/preamble" "^0.0.2"
     mobx ">=5.15.4"
     mobx-react-lite ">=2.0.7"
     resize-observer-polyfill "^1.5.1"
     slate "^0.59.0"
     slate-react "^0.59.0"
     window-or-global "^1.0.1"
+
+"@plasmicapp/preamble@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/preamble/-/preamble-0.0.2.tgz#658a10b93f327193ac34bfb4a051c402f8962ceb"
+  integrity sha512-TE6MeAqwpmkKF/VIotbBKLyqJLI5/ihAr0YKh0o4IHaIbbUm5g/5ZcBU5WcNDdxD+Nh7AT0bJrrpsqfAaKT6hA==
 
 "@plasmicapp/react-web@^0.2.53":
   version "0.2.53"

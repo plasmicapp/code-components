@@ -177,8 +177,7 @@ registerComponent(MuiSelect, {
     options: "object",
     label: "string",
   },
-  importPath: "./components/MuiSelect",
-  importName: "Select",
+  importPath: "./components/MuiSelect"
 });
 
 registerComponent(MuiButtonGroup, {
@@ -313,7 +312,7 @@ registerComponent(Tilt, {
     glareEnable: "boolean",
     glareMaxOpacity: "number",
     glareColor: "string",
-    glareBorderRadius: "number",
+    glareBorderRadius: "string",
     glarePosition: "string",
     scale: "number",
     perspective: "number",

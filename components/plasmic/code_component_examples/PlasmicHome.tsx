@@ -37,7 +37,7 @@ import Columns from "../../Columns"; // plasmic-import: Yh0Ros8irE/component
 import ListItem from "../../ListItem"; // plasmic-import: UmnocbxlOe4RY/component
 import YouTube from "react-youtube"; // plasmic-import: -IzJqW3d4U/codeComponent
 import { GoogleMap } from "@react-google-maps/api"; // plasmic-import: JpRCwVFY78Q/codeComponent
-import { Select } from "/home/runner/work/code-components/code-components/components/MuiSelect"; // plasmic-import: q21BzNeleG/codeComponent
+import { MuiSelect } from "../../MuiSelect"; // plasmic-import: q21BzNeleG/codeComponent
 import { ButtonGroup } from "@material-ui/core"; // plasmic-import: jWGxxun6Nk/codeComponent
 import { Button } from "@material-ui/core"; // plasmic-import: ss7GdP3Fxg/codeComponent
 import { Slider } from "antd"; // plasmic-import: qXDIYs1hPZ/codeComponent
@@ -46,13 +46,15 @@ import MenuItem from "antd/lib/menu/MenuItem"; // plasmic-import: ZFeP1ZxmO_/cod
 import { Alert } from "antd"; // plasmic-import: zDhUktoIlT/codeComponent
 import { Collapse } from "antd"; // plasmic-import: HrrYx87CJM/codeComponent
 import CollapsePanel from "antd/lib/collapse/CollapsePanel"; // plasmic-import: yTjqZvpEeG/codeComponent
-import { ArwesCard } from "/home/runner/work/code-components/code-components/components/Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
-import { CmsGallery } from "/home/runner/work/code-components/code-components/components/ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
-import { CmsGallery as CmsGallery2 } from "/home/runner/work/code-components/code-components/components/ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
-import { Reveal } from "/home/runner/work/code-components/code-components/components/Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
-import { Tilt } from "react-parallax-tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
-import { ParallaxWrapper } from "/home/runner/work/code-components/code-components/components/ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
-import { Embed } from "/home/runner/work/code-components/code-components/components/Embed"; // plasmic-import: 1pPy7gsFYg/codeComponent
+import { ArwesCard } from "../../Arwes"; // plasmic-import: CkxLWrtMJp/codeComponent
+import { Text } from "@arwes/core"; // plasmic-import: bABh_9g4Xv/codeComponent
+import { Figure } from "@arwes/core"; // plasmic-import: 1v53456XNO/codeComponent
+import { CmsGallery } from "../../ItemGallery"; // plasmic-import: jdQsBFXPKI/codeComponent
+import { CmsGallery as CmsGallery2 } from "../../ItemGallery"; // plasmic-import: 5fkaKXrw8d/codeComponent
+import { Reveal } from "../../Reveal"; // plasmic-import: dq3PJ2y2Vr/codeComponent
+import { Tilt } from "../../Tilt"; // plasmic-import: uJIZpEcIF1/codeComponent
+import { ParallaxWrapper } from "../../ParallaxWrapper"; // plasmic-import: _BciWRyRoW/codeComponent
+import { Embed } from "../../Embed"; // plasmic-import: 1pPy7gsFYg/codeComponent
 import ColoredSection from "../../ColoredSection"; // plasmic-import: dIpIxA1IiY/component
 import LinkButton from "../../LinkButton"; // plasmic-import: 1gxLsOJaF9Q/component
 
@@ -85,6 +87,7 @@ export type PlasmicHome__OverridesType = {
   columns?: p.Flex<typeof Columns>;
   arwesCard?: p.Flex<typeof ArwesCard>;
   h1?: p.Flex<"h1">;
+  arwesFigure?: p.Flex<typeof Figure>;
   productGallery?: p.Flex<typeof CmsGallery>;
   cmsGallery?: p.Flex<typeof CmsGallery2>;
   reveal?: p.Flex<typeof Reveal>;
@@ -114,13 +117,19 @@ function PlasmicHome__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
+        <title key="title">{"Plasmic code components"}</title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={"Plasmic code components"}
+        />
         <meta
           key="description"
           name="description"
           property="og:description"
-          content={""}
+          content={
+            "Plasmic is a page builder and design tool that lets you use React components from your codebase."
+          }
         />
       </Head>
 
@@ -223,7 +232,7 @@ function PlasmicHome__RenderFunc(props: {
                   href={"#" as const}
                   platform={"nextjs"}
                 >
-                  {"Edit this page in Plasmic! TODO"}
+                  {"Edit this page in Plasmic!"}
                 </p.PlasmicLink>
               </p.Stack>
             </p.Stack>
@@ -327,14 +336,24 @@ function PlasmicHome__RenderFunc(props: {
                     </div>
                   }
                   className={classNames("__wab_instance", sty.listItem___97Wx)}
-                  title={"Material UI"}
+                  title={
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        defaultcss.__wab_text,
+                        sty.box__wZjLx
+                      )}
+                    >
+                      {"Material UI"}
+                    </div>
+                  }
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
                     className={classNames(defaultcss.all, sty.box__edrqa)}
                   >
-                    <Select
+                    <MuiSelect
                       className={classNames(
                         "__wab_instance",
                         sty.muiSelect___2TEfX
@@ -418,7 +437,7 @@ function PlasmicHome__RenderFunc(props: {
                         hasGap={true}
                         className={classNames(defaultcss.all, sty.box__xwCbu)}
                       >
-                        <Select
+                        <MuiSelect
                           className={classNames(
                             "__wab_instance",
                             sty.muiSelect__jjUPh
@@ -515,7 +534,17 @@ function PlasmicHome__RenderFunc(props: {
                         "__wab_instance",
                         sty.listItem__bWuqh
                       )}
-                      title={"Ant Design"}
+                      title={
+                        <div
+                          className={classNames(
+                            defaultcss.all,
+                            defaultcss.__wab_text,
+                            sty.box__gqzKj
+                          )}
+                        >
+                          {"Ant Design"}
+                        </div>
+                      }
                     >
                       <div
                         className={classNames(defaultcss.all, sty.box__jMMiJ)}
@@ -1011,7 +1040,7 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.box__cDXm
+                          sty.box__wmTxR
                         )}
                       >
                         {"@arwes/core"}
@@ -1019,21 +1048,23 @@ function PlasmicHome__RenderFunc(props: {
                     }
                     className={classNames(
                       "__wab_instance",
-                      sty.listItem__qPcqs
+                      sty.listItem__hJjui
                     )}
                     title={
                       <div
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.box__gkUf5
+                          sty.box__jkZq
                         )}
                       >
                         {"Arwes Card"}
                       </div>
                     }
                   >
-                    <div className={classNames(defaultcss.all, sty.box__nPzin)}>
+                    <div
+                      className={classNames(defaultcss.all, sty.box___4Ma2P)}
+                    >
                       <ArwesCard
                         data-plasmic-name={"arwesCard"}
                         data-plasmic-override={overrides.arwesCard}
@@ -1041,30 +1072,57 @@ function PlasmicHome__RenderFunc(props: {
                         className={classNames("__wab_instance", sty.arwesCard)}
                         title={true ? "Nebula" : null}
                       >
-                        {false ? (
-                          <h1
-                            data-plasmic-name={"h1"}
-                            data-plasmic-override={overrides.h1}
+                        <div
+                          className={classNames(defaultcss.all, sty.box__cYlZy)}
+                        >
+                          <Text
+                            as={"h1" as const}
                             className={classNames(
-                              defaultcss.h1,
-                              defaultcss.__wab_text,
-                              sty.h1
+                              "__wab_instance",
+                              sty.arwesText__cf1LJ
                             )}
                           >
-                            {"NEBULA"}
-                          </h1>
-                        ) : null}
+                            {true ? (
+                              <h1
+                                data-plasmic-name={"h1"}
+                                data-plasmic-override={overrides.h1}
+                                className={classNames(
+                                  defaultcss.h1,
+                                  defaultcss.__wab_text,
+                                  sty.h1
+                                )}
+                              >
+                                {"NEBULA"}
+                              </h1>
+                            ) : null}
+                          </Text>
 
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            defaultcss.__wab_text,
-                            sty.box__dyOvQ
-                          )}
-                        >
-                          {
-                            "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, the term was used to describe any diffused astronomical object, including galaxies beyond the Milky Way."
-                          }
+                          <Text
+                            as={"p" as const}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.arwesText__cirls
+                            )}
+                          >
+                            {
+                              "A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases. Originally, the term was used to describe any diffused astronomical object, including galaxies beyond the Milky Way."
+                            }
+                          </Text>
+
+                          <Figure
+                            data-plasmic-name={"arwesFigure"}
+                            data-plasmic-override={overrides.arwesFigure}
+                            alt={"Orion" as const}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.arwesFigure
+                            )}
+                            src={
+                              "https://playground.arwes.dev/assets/images/wallpaper.jpg" as const
+                            }
+                          >
+                            {"Photo of the Orion nebula taken by Hubble."}
+                          </Figure>
                         </div>
                       </ArwesCard>
                     </div>
@@ -1492,6 +1550,19 @@ function PlasmicHome__RenderFunc(props: {
               >
                 {"See developer docs -->"}
               </p.PlasmicLink>
+
+              <p.PlasmicLink
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.link__hhMIu
+                )}
+                component={Link}
+                href={"https://github.com/plasmicapp/code-components" as const}
+                platform={"nextjs"}
+              >
+                {"See this project's host repo on GitHub -->"}
+              </p.PlasmicLink>
             </p.Stack>
 
             <ColoredSection
@@ -1627,6 +1698,7 @@ const PlasmicDescendants = {
     "columns",
     "arwesCard",
     "h1",
+    "arwesFigure",
     "productGallery",
     "cmsGallery",
     "reveal",
@@ -1637,8 +1709,9 @@ const PlasmicDescendants = {
   ],
   sectionHeading: ["sectionHeading"],
   columns: ["columns"],
-  arwesCard: ["arwesCard", "h1"],
+  arwesCard: ["arwesCard", "h1", "arwesFigure"],
   h1: ["h1"],
+  arwesFigure: ["arwesFigure"],
   productGallery: ["productGallery"],
   cmsGallery: ["cmsGallery"],
   reveal: ["reveal"],
@@ -1656,6 +1729,7 @@ type NodeDefaultElementType = {
   columns: typeof Columns;
   arwesCard: typeof ArwesCard;
   h1: "h1";
+  arwesFigure: typeof Figure;
   productGallery: typeof CmsGallery;
   cmsGallery: typeof CmsGallery2;
   reveal: typeof Reveal;
@@ -1730,6 +1804,7 @@ export const PlasmicHome = Object.assign(
     columns: makeNodeComponent("columns"),
     arwesCard: makeNodeComponent("arwesCard"),
     h1: makeNodeComponent("h1"),
+    arwesFigure: makeNodeComponent("arwesFigure"),
     productGallery: makeNodeComponent("productGallery"),
     cmsGallery: makeNodeComponent("cmsGallery"),
     reveal: makeNodeComponent("reveal"),

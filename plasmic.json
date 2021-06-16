@@ -28,19 +28,6 @@
       "cssFilePath": "plasmic/code_component_examples/plasmic_code_component_examples.module.css",
       "components": [
         {
-          "id": "9K6Sk2ST166Ni",
-          "name": "OldHome",
-          "type": "managed",
-          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
-          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicOldHome.tsx",
-          "importSpec": {
-            "modulePath": "../pages/old-home.tsx"
-          },
-          "cssFilePath": "plasmic/code_component_examples/PlasmicOldHome.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "3oILK2v_-pyvd",
           "name": "HomeHeader",
           "type": "managed",
@@ -182,6 +169,19 @@
           "cssFilePath": "plasmic/code_component_examples/PlasmicColumns.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "9K6Sk2ST166Ni",
+          "name": "OldHome",
+          "type": "managed",
+          "projectId": "aPZu6epBt5EaEYRgMF1d6z",
+          "renderModuleFilePath": "plasmic/code_component_examples/PlasmicOldHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/old-home.tsx"
+          },
+          "cssFilePath": "plasmic/code_component_examples/PlasmicOldHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -278,7 +278,149 @@
           "filePath": "../public/plasmic/code_component_examples/images/image14.svg"
         }
       ],
-      "projectApiToken": "TwiTi9V7cZzJn5j4jSpwZizlBPrDiQQh0T3hybnGtbPaHCsxBnv26Tp53atqTywSvXuXxpYpDa5Y2fqA"
+      "projectApiToken": "TwiTi9V7cZzJn5j4jSpwZizlBPrDiQQh0T3hybnGtbPaHCsxBnv26Tp53atqTywSvXuXxpYpDa5Y2fqA",
+      "codeComponents": [
+        {
+          "id": "qXDIYs1hPZ",
+          "name": "Slider",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "a0dmmmT9bh",
+          "name": "Menu",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "ZFeP1ZxmO_",
+          "name": "MenuItem",
+          "componentImportPath": "antd/lib/menu/MenuItem"
+        },
+        {
+          "id": "-IzJqW3d4U",
+          "name": "YouTube",
+          "componentImportPath": "react-youtube"
+        },
+        {
+          "id": "zQ6T7Q81cg",
+          "name": "RadialChart",
+          "componentImportPath": "react-vis"
+        },
+        {
+          "id": "JpRCwVFY78Q",
+          "name": "GoogleMap",
+          "componentImportPath": "@react-google-maps/api"
+        },
+        {
+          "id": "HrrYx87CJM",
+          "name": "Collapse",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "yTjqZvpEeG",
+          "name": "CollapsePanel",
+          "componentImportPath": "antd/lib/collapse/CollapsePanel"
+        },
+        {
+          "id": "zDhUktoIlT",
+          "name": "Alert",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "klMWInag0f",
+          "name": "XYPlot",
+          "componentImportPath": "react-vis"
+        },
+        {
+          "id": "UdxtqL9t93",
+          "name": "XAxis",
+          "componentImportPath": "react-vis"
+        },
+        {
+          "id": "OoewUcYk73",
+          "name": "YAxis",
+          "componentImportPath": "react-vis"
+        },
+        {
+          "id": "123d63LFaV",
+          "name": "VerticalBarSeries",
+          "componentImportPath": "react-vis"
+        },
+        {
+          "id": "jdQsBFXPKI",
+          "name": "CmsGallery",
+          "componentImportPath": "./components/ItemGallery"
+        },
+        {
+          "id": "5fkaKXrw8d",
+          "name": "CmsGallery",
+          "componentImportPath": "./components/ItemGallery"
+        },
+        {
+          "id": "q21BzNeleG",
+          "name": "MuiSelect",
+          "componentImportPath": "./components/MuiSelect"
+        },
+        {
+          "id": "jWGxxun6Nk",
+          "name": "ButtonGroup",
+          "componentImportPath": "@material-ui/core"
+        },
+        {
+          "id": "ss7GdP3Fxg",
+          "name": "Button",
+          "componentImportPath": "@material-ui/core"
+        },
+        {
+          "id": "OgBn-UPRA2",
+          "name": "DynWiredButton",
+          "componentImportPath": "./components/DynamicWired"
+        },
+        {
+          "id": "79eFtA45IG",
+          "name": "DynWiredIconButton",
+          "componentImportPath": "./components/DynamicWired"
+        },
+        {
+          "id": "CkxLWrtMJp",
+          "name": "ArwesCard",
+          "componentImportPath": "./components/Arwes"
+        },
+        {
+          "id": "bABh_9g4Xv",
+          "name": "Text",
+          "componentImportPath": "@arwes/core"
+        },
+        {
+          "id": "BngnWU4ZqG",
+          "name": "Carousel",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "1pPy7gsFYg",
+          "name": "Embed",
+          "componentImportPath": "./components/Embed"
+        },
+        {
+          "id": "uJIZpEcIF1",
+          "name": "Tilt",
+          "componentImportPath": "./components/Tilt"
+        },
+        {
+          "id": "_BciWRyRoW",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "./components/ParallaxWrapper"
+        },
+        {
+          "id": "dq3PJ2y2Vr",
+          "name": "Reveal",
+          "componentImportPath": "./components/Reveal"
+        },
+        {
+          "id": "1v53456XNO",
+          "name": "Figure",
+          "componentImportPath": "@arwes/core"
+        }
+      ]
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -288,7 +430,8 @@
       "components": [],
       "icons": [],
       "images": [],
-      "projectApiToken": "nPw276qGsy9kISQCHrcRrsj3Y9Yva9TMyYKNUpoOMOHgRj1A51qOC6LMB2185QlA52K87n32oQJHSi5be9w"
+      "projectApiToken": "nPw276qGsy9kISQCHrcRrsj3Y9Yva9TMyYKNUpoOMOHgRj1A51qOC6LMB2185QlA52K87n32oQJHSi5be9w",
+      "codeComponents": []
     },
     {
       "projectId": "kjuFFTSZb8fanzCHT2C1jz",
@@ -1842,7 +1985,8 @@
           "filePath": "../public/plasmic/plasmic_kit_website_components/images/image88.png"
         }
       ],
-      "projectApiToken": "q9KAOlfNbBUEcKUMjcu7Gj2e5OQS6wnlhf3e6ZuLMHH0stHnFvkDLA1OtjXEVdeHJSALtHMtloMF5YVt8OWcww"
+      "projectApiToken": "q9KAOlfNbBUEcKUMjcu7Gj2e5OQS6wnlhf3e6ZuLMHH0stHnFvkDLA1OtjXEVdeHJSALtHMtloMF5YVt8OWcww",
+      "codeComponents": []
     }
   ],
   "globalVariants": {
@@ -1870,6 +2014,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.153",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.153/dist/plasmic.schema.json"
+  "cliVersion": "0.1.154",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.154/dist/plasmic.schema.json"
 }
