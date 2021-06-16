@@ -134,7 +134,9 @@ function PlasmicHome__RenderFunc(props: {
         <meta
           key="og:image"
           property="og:image"
-          content={"/plasmic/code_component_examples/images/image15.png"}
+          content={
+            "https://plasmic-ray.s3.us-west-2.amazonaws.com/code-components.png"
+          }
         />
       </Head>
 
@@ -214,7 +216,7 @@ function PlasmicHome__RenderFunc(props: {
                       <span style={{ fontWeight: 700 }}>{"Plasmic 2.0"}</span>
                       <React.Fragment>
                         {
-                          ": the web design tool that integrates seamlessly with your codebase."
+                          ": the web design tool that integrates seamlessly with your codebase and lets you drag-and-drop your real production React components."
                         }
                       </React.Fragment>
                     </span>
