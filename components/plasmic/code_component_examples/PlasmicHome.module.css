@@ -149,9 +149,16 @@
   line-height: 1.5;
   color: #00000080 /* plasmic-token: OTVT961sE */;
 }
+.img__iSdf {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+}
 .link___6MBo7 {
   position: relative;
-  align-self: flex-end;
+  align-self: center;
   color: #04a4f4 /* plasmic-token: 0Zy8-ebtSJiyz */;
   font-weight: 700;
   font-family: "Architects Daughter";

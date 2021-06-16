@@ -205,7 +205,7 @@ function PlasmicHome__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Introducing the web design tool that embeds seamlessly into your codebase."
+                      "Introducing the web design tool that integrates seamlessly with your codebase."
                     }
                   </div>
 
@@ -221,6 +221,13 @@ function PlasmicHome__RenderFunc(props: {
                     }
                   </div>
                 </p.Stack>
+
+                <img
+                  alt={""}
+                  className={classNames(defaultcss.img, sty.img__iSdf)}
+                  role={"img"}
+                  src={"/plasmic/code_component_examples/images/image15.png"}
+                />
 
                 <p.PlasmicLink
                   className={classNames(
@@ -1414,8 +1421,9 @@ function PlasmicHome__RenderFunc(props: {
                         y={[-20, 20]}
                       >
                         <img
-                          alt={""}
+                          alt={"" as const}
                           className={classNames(defaultcss.img, sty.img__hlNnt)}
+                          loading={"lazy" as const}
                           role={"img"}
                           src={
                             "/plasmic/code_component_examples/images/image6.png"
@@ -1433,6 +1441,7 @@ function PlasmicHome__RenderFunc(props: {
                         <img
                           alt={""}
                           className={classNames(defaultcss.img, sty.img__zHmE)}
+                          loading={"lazy" as const}
                           role={"img"}
                           src={
                             "/plasmic/code_component_examples/images/image5.png"
@@ -1453,6 +1462,7 @@ function PlasmicHome__RenderFunc(props: {
                             defaultcss.img,
                             sty.img___87KQx
                           )}
+                          loading={"lazy" as const}
                           role={"img"}
                           src={
                             "/plasmic/code_component_examples/images/image7.png"
@@ -1470,6 +1480,7 @@ function PlasmicHome__RenderFunc(props: {
                         <img
                           alt={""}
                           className={classNames(defaultcss.img, sty.img__guhtM)}
+                          loading={"lazy" as const}
                           role={"img"}
                           src={
                             "/plasmic/code_component_examples/images/image8.png"
@@ -1717,6 +1728,7 @@ function PlasmicHome__RenderFunc(props: {
                   <img
                     alt={""}
                     className={classNames(defaultcss.img, sty.img__aa1B4)}
+                    loading={"lazy" as const}
                     role={"img"}
                     src={"/plasmic/code_component_examples/images/image14.svg"}
                   />
@@ -1760,9 +1772,8 @@ const PlasmicDescendants = {
   linkButton: ["linkButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
-type DescendantsType<
-  T extends NodeNameType
-> = typeof PlasmicDescendants[T][number];
+type DescendantsType<T extends NodeNameType> =
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
   sectionHeading: typeof SectionHeading;
@@ -1784,24 +1795,26 @@ type NodeOverridesType<T extends NodeNameType> = Pick<
   PlasmicHome__OverridesType,
   DescendantsType<T>
 >;
-type NodeComponentProps<T extends NodeNameType> = { // Explicitly specify variants, args, and overrides as objects
-  variants?: PlasmicHome__VariantsArgs;
-  args?: PlasmicHome__ArgsType;
-  overrides?: NodeOverridesType<T>;
-  dataFetches?: PlasmicHome__Fetches;
-} & Omit<PlasmicHome__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-  // Specify args directly as props
-  Omit<PlasmicHome__ArgsType, ReservedPropsType> &
-  // Specify overrides for each element directly as props
-  Omit<
-    NodeOverridesType<T>,
-    ReservedPropsType | VariantPropType | ArgPropType
-  > &
-  // Specify props for the root element
-  Omit<
-    Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
-    ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
-  >;
+type NodeComponentProps<T extends NodeNameType> =
+  // Explicitly specify variants, args, and overrides as objects
+  {
+    variants?: PlasmicHome__VariantsArgs;
+    args?: PlasmicHome__ArgsType;
+    overrides?: NodeOverridesType<T>;
+    dataFetches?: PlasmicHome__Fetches;
+  } & Omit<PlasmicHome__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+    // Specify args directly as props
+    Omit<PlasmicHome__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
+      NodeOverridesType<T>,
+      ReservedPropsType | VariantPropType | ArgPropType
+    > &
+    // Specify props for the root element
+    Omit<
+      Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
+      ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
+    >;
 
 function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   type PropsType = NodeComponentProps<NodeName> & { key?: React.Key };
