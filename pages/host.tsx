@@ -45,8 +45,11 @@ registerComponent(Menu, {
   props: {
     mode: "string",
     theme: "string",
-    selectedKeys: "object",
-    defaultSelectedKeys: "object",
+    selectedKeys: {
+      type: "object",
+      editOnly: true,
+      uncontrolledProp: "defaultSelectedKeys",
+    },
     children: {
       type: "slot",
       allowedComponents: ["MenuItem"],
@@ -68,7 +71,11 @@ registerComponent(MenuItem, {
 registerComponent(Collapse, {
   name: "Collapse",
   props: {
-    defaultActiveKey: "object",
+    activeKey: {
+      type: "object",
+      editOnly: true,
+      uncontrolledProp: "defaultActiveKey",
+    },
     children: {
       type: "slot",
       allowedComponents: ["CollapsePanel"],
