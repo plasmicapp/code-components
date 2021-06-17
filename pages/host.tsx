@@ -100,7 +100,10 @@ registerComponent(Alert, {
   props: {
     message: "string",
     description: "slot",
-    type: "string",
+    type: {
+      type: "choice",
+      options: ["success", "info", "warning", "error"],
+    },
     showIcon: "boolean",
   },
   importPath: "antd",
@@ -190,8 +193,14 @@ registerComponent(MuiSelect, {
 registerComponent(MuiButtonGroup, {
   name: "MuiButtonGroup",
   props: {
-    color: "string",
-    variant: "string",
+    color: {
+      type: "choice",
+      options: ["primary", "secondary"],
+    },
+    variant: {
+      type: "choice",
+      options: ["contained", "outlined", "text"],
+    },
     children: "slot",
   },
   importPath: "@material-ui/core",
@@ -203,8 +212,14 @@ registerComponent(MuiButton, {
   props: {
     children: "slot",
     disabled: "boolean",
-    color: "string",
-    variant: "string",
+    color: {
+      type: "choice",
+      options: ["primary", "secondary"],
+    },
+    variant: {
+      type: "choice",
+      options: ["contained", "outlined", "text"],
+    },
     href: "string",
   },
   importPath: "@material-ui/core",
@@ -240,7 +255,10 @@ registerComponent(ProductGallery, {
   props: {
     count: "number",
     scroller: "boolean",
-    category: "string",
+    category: {
+      type: "choice",
+      options: ["", "Boots", "Shirts", "Knitwear"],
+    },
   },
   importPath: "./components/ItemGallery",
 });
@@ -349,10 +367,26 @@ registerComponent(Reveal, {
   name: "Reveal",
   props: {
     children: "slot",
-    effect: "string",
+    effect: {
+      type: "choice",
+      options: [
+        "bounce",
+        "fade",
+        "flip",
+        "hinge",
+        "jackinthebox",
+        "roll",
+        "rotate",
+        "slide",
+        "zoom",
+      ],
+    },
     cascade: "boolean",
     damping: "boolean",
-    direction: "string",
+    direction: {
+      type: "choice",
+      options: ["up", "down", "left", "right"],
+    },
     delay: "number",
     duration: "number",
     fraction: "number",
