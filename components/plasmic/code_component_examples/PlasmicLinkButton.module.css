@@ -162,7 +162,7 @@
   background: rgb(118, 62, 230);
 }
 .slotLabel {
-  font-family: Inter;
+  font-family: "Inter", "sans-serif";
   font-size: 20px;
   color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
   line-height: 24px;

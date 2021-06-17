@@ -347,6 +347,16 @@ function PlasmicHome__RenderFunc(props: {
                         "Use your own design system, or use off-the-shelf libraries complete with all the theming and customizations you've applied in your codebase. Seamlessly interweave Plasmic-designed content and code components."
                       }
                     </div>
+
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        defaultcss.__wab_text,
+                        sty.box__jyQkv
+                      )}
+                    >
+                      {"Roboto"}
+                    </div>
                   </p.Stack>
                 </p.Stack>
 
@@ -709,7 +719,7 @@ function PlasmicHome__RenderFunc(props: {
                                   "__wab_instance",
                                   sty.collapse___3HxPe
                                 )}
-                                defaultActiveKey={["1", "2"]}
+                                defaultActiveKey={["1"]}
                               >
                                 <CollapsePanel
                                   className={classNames(
@@ -846,7 +856,6 @@ function PlasmicHome__RenderFunc(props: {
                           "__wab_instance",
                           sty.menu__bu4Ci
                         )}
-                        defaultSelectedKeys={["opt3"]}
                       >
                         <MenuItem
                           className={classNames(
@@ -928,7 +937,6 @@ function PlasmicHome__RenderFunc(props: {
                         }
                         message={"Purchase complete" as const}
                         showIcon={true}
-                        type={"success" as const}
                       />
 
                       <Alert
@@ -939,7 +947,6 @@ function PlasmicHome__RenderFunc(props: {
                         description={"Please fill all required fields."}
                         message={"Error submitting form" as const}
                         showIcon={true}
-                        type={"error" as const}
                       />
                     </ListItem>
 
@@ -956,7 +963,6 @@ function PlasmicHome__RenderFunc(props: {
                           "__wab_instance",
                           sty.collapse__bg4Bv
                         )}
-                        defaultActiveKey={["1", "2"]}
                       >
                         <CollapsePanel
                           className={classNames(

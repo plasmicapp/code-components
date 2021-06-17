@@ -15,7 +15,7 @@
   justify-content: flex-start;
 }
 .slotTitle {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "sans-serif";
   font-size: 32px /* plasmic-token: l9Xm-QldJOTM2 */;
   font-weight: 900;
 }
