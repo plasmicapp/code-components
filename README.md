@@ -2,18 +2,18 @@
 
 See the published site at https://code-components.plasmic.site.
 
-See the Plasmic project at https://studio.plasmic.app/projects/aPZu6epBt5EaEYRgMF1d6z.
+See the Plasmic project at https://plasmic.app/proj/code-components.
 
-This is a Next.js project bootstrapped with [`create-plasmic-app`](https://www.npmjs.com/package/create-plasmic-app). It serves as the application host for the Plasmic project.
+This repo is a Next.js codebase bootstrapped with [`create-plasmic-app`](https://www.npmjs.com/package/create-plasmic-app). It serves as the application host for the Plasmic project.
 
 ## Getting started
 
 Make sure you are logged in to Plasmic Studio: https://studio.plasmic.app.
 
-1. Clone the above Plasmic project.
-1. In your project dashboard at https://studio.plasmic.app, configure the cloned project to use http://localhost:3000/host as the application host.
+1. Duplicate the above Plasmic project.
+1. From your project dashboard at https://studio.plasmic.app, configure the duplicated project to use http://localhost:3000/host as the application host.
 1. Start the dev server: `yarn dev`.
-1. Open the cloned Plasmic project.
+1. Open the duplicated Plasmic project.
 
 Try registering new components or changing the props on components - you can drag/drop and configure them in Plasmic Studio!
 
