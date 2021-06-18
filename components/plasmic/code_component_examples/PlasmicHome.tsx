@@ -255,7 +255,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.link___6MBo7
                   )}
                   component={Link}
-                  href={"https://plasmic.app/projects/code-components" as const}
+                  href={"https://plasmic.app/proj/code-components" as const}
                   platform={"nextjs"}
                   target={"_blank" as const}
                 >
