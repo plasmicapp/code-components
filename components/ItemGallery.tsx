@@ -83,9 +83,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjA4Mw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjA4Mw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_grande_89f870ed-dc56-4990-9aa5-4f11ddf13108.jpg?v=1491918957",
                       width: 517,
@@ -102,9 +104,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjE0Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjE0Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_grande_89f870ed-dc56-4990-9aa5-4f11ddf13108.jpg?v=1491918957",
                       width: 517,
@@ -121,9 +125,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjIxMQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjIxMQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_grande_89f870ed-dc56-4990-9aa5-4f11ddf13108.jpg?v=1491918957",
                       width: 517,
@@ -140,9 +146,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjI3NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjI3NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_grande_89f870ed-dc56-4990-9aa5-4f11ddf13108.jpg?v=1491918957",
                       width: 517,
@@ -159,9 +167,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjMzOQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYyMjMzOQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNzkxNTY5OTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_grande_89f870ed-dc56-4990-9aa5-4f11ddf13108.jpg?v=1491918957",
                       width: 517,
@@ -255,9 +265,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzYzNQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzYzNQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_f5b2f018-5434-446e-912c-10484293c134.jpg?v=1491850944",
                       width: 1766,
@@ -274,9 +286,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzY5OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzY5OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_f5b2f018-5434-446e-912c-10484293c134.jpg?v=1491850944",
                       width: 1766,
@@ -293,9 +307,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzc2Mw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzc2Mw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_f5b2f018-5434-446e-912c-10484293c134.jpg?v=1491850944",
                       width: 1766,
@@ -312,9 +328,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzgyNw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzgyNw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_f5b2f018-5434-446e-912c-10484293c134.jpg?v=1491850944",
                       width: 1766,
@@ -331,9 +349,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzg5MQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzYzNzg5MQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NDUxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_f5b2f018-5434-446e-912c-10484293c134.jpg?v=1491850944",
                       width: 1766,
@@ -427,9 +447,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MTg3NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MTg3NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/003_3e206539-20d3-49c0-8bff-006e449906ca.jpg?v=1491850970",
                       width: 1766,
@@ -446,9 +468,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjAwMw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjAwMw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/003_3e206539-20d3-49c0-8bff-006e449906ca.jpg?v=1491850970",
                       width: 1766,
@@ -465,9 +489,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjA2Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjA2Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/003_3e206539-20d3-49c0-8bff-006e449906ca.jpg?v=1491850970",
                       width: 1766,
@@ -484,9 +510,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjI1OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjI1OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/003_3e206539-20d3-49c0-8bff-006e449906ca.jpg?v=1491850970",
                       width: 1766,
@@ -503,9 +531,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjQ1MQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY3MjQ1MQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NTc3NjM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/003_3e206539-20d3-49c0-8bff-006e449906ca.jpg?v=1491850970",
                       width: 1766,
@@ -607,9 +637,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjUzMQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjUzMQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_fa260252-43fd-4cee-8164-f5c14b641399.jpg?v=1491850999",
                       width: 1766,
@@ -626,9 +658,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjY1OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjY1OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_fa260252-43fd-4cee-8164-f5c14b641399.jpg?v=1491850999",
                       width: 1766,
@@ -645,9 +679,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjcyMw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjcyMw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_fa260252-43fd-4cee-8164-f5c14b641399.jpg?v=1491850999",
                       width: 1766,
@@ -664,9 +700,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjkxNQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4NjkxNQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_fa260252-43fd-4cee-8164-f5c14b641399.jpg?v=1491850999",
                       width: 1766,
@@ -683,9 +721,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4Njk3OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzY4Njk3OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NjQwOTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_fa260252-43fd-4cee-8164-f5c14b641399.jpg?v=1491850999",
                       width: 1766,
@@ -772,9 +812,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjI1OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjI1OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_c0f47f6b-eddb-494e-9915-483d4153b0a1.jpg?v=1491851030",
                       width: 1766,
@@ -791,9 +833,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjMyMw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjMyMw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_c0f47f6b-eddb-494e-9915-483d4153b0a1.jpg?v=1491851030",
                       width: 1766,
@@ -810,9 +854,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjM4Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcxMjM4Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzI0MTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_c0f47f6b-eddb-494e-9915-483d4153b0a1.jpg?v=1491851030",
                       width: 1766,
@@ -894,9 +940,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDA5OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDA5OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_24002f35-612c-44df-822d-44f66176f22e.jpg?v=1491851039",
                       width: 1766,
@@ -913,9 +961,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDIyNw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDIyNw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_24002f35-612c-44df-822d-44f66176f22e.jpg?v=1491851039",
                       width: 1766,
@@ -932,9 +982,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDM1NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzcyNDM1NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5NzU2ODM=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_24002f35-612c-44df-822d-44f66176f22e.jpg?v=1491851039",
                       width: 1766,
@@ -1016,9 +1068,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczODk0Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczODk0Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_9bb8badd-af92-45d5-b543-db3554290e71.jpg?v=1491851050",
                       width: 1766,
@@ -1035,9 +1089,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczOTAxMQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczOTAxMQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_9bb8badd-af92-45d5-b543-db3554290e71.jpg?v=1491851050",
                       width: 1766,
@@ -1054,9 +1110,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczOTA3NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzczOTA3NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5Nzg2Mjc=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_9bb8badd-af92-45d5-b543-db3554290e71.jpg?v=1491851050",
                       width: 1766,
@@ -1138,9 +1196,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0MzU1NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0MzU1NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_425d2f71-9606-4ac7-90d5-6b90b8ea33c4.jpg?v=1491851061",
                       width: 1766,
@@ -1157,9 +1217,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0MzY4Mw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0MzY4Mw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_425d2f71-9606-4ac7-90d5-6b90b8ea33c4.jpg?v=1491851061",
                       width: 1766,
@@ -1176,9 +1238,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0Mzc0Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc0Mzc0Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5ODE2OTk=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_425d2f71-9606-4ac7-90d5-6b90b8ea33c4.jpg?v=1491851061",
                       width: 1766,
@@ -1269,9 +1333,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzA3NQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzA3NQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_534126a9-c183-4c17-b772-2bd37fdb5225.jpg?v=1491851074",
                       width: 1766,
@@ -1288,9 +1354,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzEzOQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzEzOQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_534126a9-c183-4c17-b772-2bd37fdb5225.jpg?v=1491851074",
                       width: 1766,
@@ -1307,9 +1375,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzIwMw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzIwMw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_534126a9-c183-4c17-b772-2bd37fdb5225.jpg?v=1491851074",
                       width: 1766,
@@ -1326,9 +1396,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzI2Nw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzI2Nw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_534126a9-c183-4c17-b772-2bd37fdb5225.jpg?v=1491851074",
                       width: 1766,
@@ -1345,9 +1417,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzMzMQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2MzMzMQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTMxNTU=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_534126a9-c183-4c17-b772-2bd37fdb5225.jpg?v=1491851074",
                       width: 1766,
@@ -1438,9 +1512,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzIzNQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzIzNQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_b65f09ed-0408-47cf-aaf4-c9ab2beadae6.jpg?v=1491851088",
                       width: 1766,
@@ -1457,9 +1533,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzI5OQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzI5OQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_b65f09ed-0408-47cf-aaf4-c9ab2beadae6.jpg?v=1491851088",
                       width: 1766,
@@ -1476,9 +1554,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzM2Mw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzM2Mw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_b65f09ed-0408-47cf-aaf4-c9ab2beadae6.jpg?v=1491851088",
                       width: 1766,
@@ -1495,9 +1575,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzQyNw==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzQyNw==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_b65f09ed-0408-47cf-aaf4-c9ab2beadae6.jpg?v=1491851088",
                       width: 1766,
@@ -1514,9 +1596,11 @@ const exampleProductData = {
                   node: {
                     availableForSale: true,
                     currentlyNotInStock: false,
-                    id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzQ5MQ==",
+                    id:
+                      "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8zNjYwNzc2NzQ5MQ==",
                     image: {
-                      id: "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
+                      id:
+                        "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMjEyNTM5OTgyMTE=",
                       transformedSrc:
                         "https://cdn.shopify.com/s/files/1/1312/0893/products/001_b65f09ed-0408-47cf-aaf4-c9ab2beadae6.jpg?v=1491851088",
                       width: 1766,
@@ -2328,7 +2412,8 @@ const exampleCmsData = {
           title: "Janine",
           description: "Profile pic",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/149UafeyfcGSoOmESmmYSA/3fa4e999df6e6bc803159316c04efd76/FI01.png",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/149UafeyfcGSoOmESmmYSA/3fa4e999df6e6bc803159316c04efd76/FI01.png",
             details: {
               size: 12940,
               image: {
@@ -2370,7 +2455,8 @@ const exampleCmsData = {
         fields: {
           title: "Air Baloon",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/1zY02V76cUsM6yWycWqyk6/ef2a73cd2ff8ec9bf38dca716361bd98/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/1zY02V76cUsM6yWycWqyk6/ef2a73cd2ff8ec9bf38dca716361bd98/bXoAlw8gT66vBo1wcFoO_IMG_9181.jpg",
             details: {
               size: 4328734,
               image: {
@@ -2412,7 +2498,8 @@ const exampleCmsData = {
         fields: {
           title: "The Flower",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/26PCF5jzziyeiessOOY0o0/eb7c2a18dfb6dfb2d6a591306e15a9b5/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/26PCF5jzziyeiessOOY0o0/eb7c2a18dfb6dfb2d6a591306e15a9b5/2MwGKhLETRSQoHP9UWE4_IMG_1348-3.jpg",
             details: {
               size: 8797338,
               image: {
@@ -2454,7 +2541,8 @@ const exampleCmsData = {
         fields: {
           title: "Golden Gate Bridge",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/2czUZ3VWIc68cyOoyGY4MW/6a000dad7ec5564c9252b750521e8c07/lUUnN7VGSoWZ3noefeH7_Baker_Beach-12.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/2czUZ3VWIc68cyOoyGY4MW/6a000dad7ec5564c9252b750521e8c07/lUUnN7VGSoWZ3noefeH7_Baker_Beach-12.jpg",
             details: {
               size: 9508880,
               image: {
@@ -2496,7 +2584,8 @@ const exampleCmsData = {
         fields: {
           title: "The world on a digital screen",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/3nCIlsuVKwQysuMcKGuUA4/9a8a4ebb33072a4bbdf5adcac6359f8d/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/3nCIlsuVKwQysuMcKGuUA4/9a8a4ebb33072a4bbdf5adcac6359f8d/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg",
             details: {
               size: 1871426,
               image: {
@@ -2538,7 +2627,8 @@ const exampleCmsData = {
         fields: {
           title: "tumblr njljopUHgc1tyx950o1 1280",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/4cDNp7QWHuYUaCEIkWC4wQ/a047577f04da2483ed4dac39e094a849/tumblr_njljopUHgc1tyx950o1_1280.png",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/4cDNp7QWHuYUaCEIkWC4wQ/a047577f04da2483ed4dac39e094a849/tumblr_njljopUHgc1tyx950o1_1280.png",
             details: {
               size: 919997,
               image: {
@@ -2580,7 +2670,8 @@ const exampleCmsData = {
         fields: {
           title: "tumblr nblcumX8SZ1tyx950o1 1280",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/4hbW28y6884swoYKiq6oSs/2e01fe388e132125eb888114170bfbad/tumblr_nblcumX8SZ1tyx950o1_1280.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/4hbW28y6884swoYKiq6oSs/2e01fe388e132125eb888114170bfbad/tumblr_nblcumX8SZ1tyx950o1_1280.jpg",
             details: {
               size: 297619,
               image: {
@@ -2622,7 +2713,8 @@ const exampleCmsData = {
         fields: {
           title: "Pie in the sky",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/5DGRkcoj9mAgwkgGyKMuwe/8eeec539127f4bc70427ac5cdf2adba5/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/5DGRkcoj9mAgwkgGyKMuwe/8eeec539127f4bc70427ac5cdf2adba5/EOZpjI3oSqKPNnF2S4Tp_Untitled.jpg",
             details: {
               size: 2076159,
               image: {
@@ -2664,7 +2756,8 @@ const exampleCmsData = {
         fields: {
           title: "Celebration",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/6y0psij2o02YIwGScEo4kS/1b3f09b8fcedece1d17ea58417b55eb4/photo-1421986527537-888d998adb74.jpeg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/6y0psij2o02YIwGScEo4kS/1b3f09b8fcedece1d17ea58417b55eb4/photo-1421986527537-888d998adb74.jpeg",
             details: {
               size: 465358,
               image: {
@@ -2706,7 +2799,8 @@ const exampleCmsData = {
         fields: {
           title: "City Street",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/geptFDHuzQa8oA2Ywmiew/c73149d067f432f5172601990997fa41/3CoEETpvQYO8x60lnZSA_rue.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/geptFDHuzQa8oA2Ywmiew/c73149d067f432f5172601990997fa41/3CoEETpvQYO8x60lnZSA_rue.jpg",
             details: {
               size: 8254379,
               image: {
@@ -2748,7 +2842,8 @@ const exampleCmsData = {
         fields: {
           title: "Mountie",
           file: {
-            url: "//images.ctfassets.net/fbr4i5aajb0w/wD4g6YYa655PQt0FWehEg/9750a2aec2187505284a32ed3f6e5197/592717116_a3c22670ff_c.jpg",
+            url:
+              "//images.ctfassets.net/fbr4i5aajb0w/wD4g6YYa655PQt0FWehEg/9750a2aec2187505284a32ed3f6e5197/592717116_a3c22670ff_c.jpg",
             details: {
               size: 75258,
               image: {
@@ -2865,9 +2960,14 @@ interface ItemGalleryProps {
   scroller?: boolean;
   children?: ReactNode;
   style?: CSSProperties;
+  className?: string;
 }
 
-export function ItemGallery({ scroller = false, children }: ItemGalleryProps) {
+export function ItemGallery({
+  scroller = false,
+  children,
+  className,
+}: ItemGalleryProps) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [left, setLeft] = useState(0);
   useEffect(() => {
@@ -2883,7 +2983,7 @@ export function ItemGallery({ scroller = false, children }: ItemGalleryProps) {
   }
 
   return (
-    <div className={sty.Gallery}>
+    <div className={`${sty.Gallery} ${className}`}>
       {scroller && (
         <button className={sty.ScrollBtn} onClick={() => slide(-1)}>
           ‹
@@ -2911,14 +3011,16 @@ interface ProductGalleryProps {
   count?: number;
   category?: string;
   scroller?: boolean;
+  className?: string;
 }
 export function ProductGallery({
   category,
   count,
   ...rest
 }: ProductGalleryProps) {
-  const [data, setData] =
-    useState<typeof exampleProductData | undefined>(undefined);
+  const [data, setData] = useState<typeof exampleProductData | undefined>(
+    undefined
+  );
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -2986,11 +3088,13 @@ export function ProductGallery({
 interface CmsGalleryProps {
   count?: number;
   scroller?: boolean;
+  className?: string;
 }
 
 export function CmsGallery({ count, ...rest }: CmsGalleryProps) {
-  const [data, setData] =
-    useState<typeof exampleCmsData | undefined>(undefined);
+  const [data, setData] = useState<typeof exampleCmsData | undefined>(
+    undefined
+  );
   useEffect(() => {
     (async () => {
       const response = await fetch(
