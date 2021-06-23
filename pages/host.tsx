@@ -24,9 +24,7 @@ import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 import { ArwesCard } from "../components/Arwes";
 import { Figure, Text } from "@arwes/core";
 import { Embed } from "../components/Embed";
-import ReactParallaxTilt from "react-parallax-tilt";
 import { Tilt } from "../components/Tilt";
-import { Parallax } from "react-scroll-parallax";
 import { ParallaxWrapper } from "../components/ParallaxWrapper";
 import { Reveal } from "../components/Reveal";
 
