@@ -43,9 +43,14 @@ registerComponent(Menu, {
   props: {
     mode: "string",
     theme: "string",
+    // We need to use `selectedKeys` instead of `defaultSelectedKeys` to
+    // control/toggle the selected keys in the editor.
     selectedKeys: {
       type: "object",
       editOnly: true,
+      // However we want the generated code to map the values we set in the
+      // editor to `defaultSelectedKeys` (so the selected keys will change as
+      // the user selects new items)
       uncontrolledProp: "defaultSelectedKeys",
     },
     children: {
