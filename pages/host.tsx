@@ -18,7 +18,14 @@ import {
 } from "@material-ui/core";
 
 import Head from "next/head";
-import { CmsGallery, ProductGallery } from "../components/ItemGallery";
+import {
+  CmsGallery,
+  ProductCollection,
+  ProductGallery,
+  ProductImage,
+  ProductPrice,
+  ProductTitle,
+} from "../components/ItemGallery";
 import { MuiSelect } from "../components/MuiSelect";
 import { DynWiredButton, DynWiredIconButton } from "../components/DynamicWired";
 import { ArwesCard } from "../components/Arwes";
@@ -263,6 +270,37 @@ registerComponent(ProductGallery, {
       options: ["", "Boots", "Shirts", "Knitwear"],
     },
   },
+  importPath: "./components/ItemGallery",
+});
+
+registerComponent(ProductCollection, {
+  name: "ProductCollection",
+  props: {
+    count: "number",
+    children: "slot",
+    category: {
+      type: "choice",
+      options: ["", "Boots", "Shirts", "Knitwear"],
+    },
+  },
+  importPath: "./components/ItemGallery",
+});
+
+registerComponent(ProductTitle, {
+  name: "ProductTitle",
+  props: {},
+  importPath: "./components/ItemGallery",
+});
+
+registerComponent(ProductImage, {
+  name: "ProductImage",
+  props: {},
+  importPath: "./components/ItemGallery",
+});
+
+registerComponent(ProductPrice, {
+  name: "ProductPrice",
+  props: {},
   importPath: "./components/ItemGallery",
 });
 

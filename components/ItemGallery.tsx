@@ -1,4 +1,12 @@
-import { CSSProperties, ReactNode, useEffect, useRef, useState } from "react";
+import {
+  createContext,
+  CSSProperties,
+  ReactNode,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 import sty from "./ItemGallery.module.css";
 import { classNames } from "@plasmicapp/react-web";
@@ -202,7 +210,7 @@ export function ProductGallery({
 
   return (
     <ItemGallery {...rest}>
-      {data?.data.products.edges.map((productEdge) => {
+      {data?.data.products.edges.slice(0, count).map((productEdge) => {
         const product = productEdge.node;
         const image = product.images.edges[0].node;
         if (category && category !== product.productType) {
@@ -226,6 +234,114 @@ export function ProductGallery({
         );
       })}
     </ItemGallery>
+  );
+}
+
+export type ProductData = typeof exampleProductData.data.products.edges[number]["node"];
+
+const ProductBoxContext = createContext<ProductData | undefined>(undefined);
+
+interface ProductCollectionProps {
+  count?: number;
+  category?: string;
+  scroller?: boolean;
+  className?: string;
+  children?: ReactNode;
+}
+export function ProductCollection({
+  category,
+  count,
+  children,
+  className,
+}: ProductCollectionProps) {
+  const [data, setData] = useState<typeof exampleProductData | undefined>(
+    undefined
+  );
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(
+        "https://graphql.myshopify.com/api/2021-04/graphql.json",
+        {
+          headers: {
+            accept: "*/*",
+            "accept-language": "en-US,en;q=0.9",
+            "content-type": "application/json",
+            "sec-ch-ua":
+              '" Not A;Brand";v="99", "Chromium";v="90", "Google Chrome";v="90"',
+            "sec-ch-ua-mobile": "?0",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "cross-site",
+            "x-shopify-storefront-access-token":
+              "ecdc7f91ed0970e733268535c828fbbe",
+          },
+          referrer: "https://shopify.dev/",
+          referrerPolicy: "strict-origin-when-cross-origin",
+          body: JSON.stringify({
+            query: productQuery,
+
+            variables: { first: 10 },
+          }),
+          method: "POST",
+          mode: "cors",
+          credentials: "omit",
+        }
+      );
+      const data = await response.json();
+      setData(data);
+    })();
+  }, []);
+
+  return (
+    <div className={className}>
+      {data?.data.products.edges.slice(0, count).map((productEdge) => {
+        const product = productEdge.node;
+        if (category && category !== product.productType) {
+          return null;
+        }
+        return (
+          <ProductBoxContext.Provider value={product} key={product.id}>
+            <div className={sty.Item}>{children}</div>
+          </ProductBoxContext.Provider>
+        );
+      })}
+    </div>
+  );
+}
+
+function useProduct() {
+  return useContext(ProductBoxContext);
+}
+
+export function ProductImage({ className }: { className?: string }) {
+  const product = useProduct();
+  if (!product) return null;
+  const image = product.images.edges[0].node;
+  return (
+    <img
+      alt={product.title}
+      src={image.transformedSrc}
+      width={image.width}
+      height={image.height}
+      loading={"lazy"}
+      className={className}
+    />
+  );
+}
+
+export function ProductTitle({ className }: { className?: string }) {
+  const product = useProduct();
+  if (!product) return null;
+  return <div className={className}>{product.title}</div>;
+}
+
+export function ProductPrice({ className }: { className?: string }) {
+  const product = useProduct();
+  if (!product) return null;
+  return (
+    <div className={className}>
+      ${product.priceRange.maxVariantPrice.amount}
+    </div>
   );
 }
 
