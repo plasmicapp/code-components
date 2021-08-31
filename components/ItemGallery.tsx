@@ -9,7 +9,7 @@ import {
 } from "react";
 
 import sty from "./ItemGallery.module.css";
-import { classNames } from "@plasmicapp/react-web";
+import classNames from "classnames";
 import { exampleCmsData, exampleProductData } from "./ItemGalleryExampleData";
 
 const productQuery = `
@@ -170,9 +170,8 @@ export function ProductGallery({
   count,
   ...rest
 }: ProductGalleryProps) {
-  const [data, setData] = useState<typeof exampleProductData | undefined>(
-    undefined
-  );
+  const [data, setData] =
+    useState<typeof exampleProductData | undefined>(undefined);
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -237,7 +236,8 @@ export function ProductGallery({
   );
 }
 
-export type ProductData = typeof exampleProductData.data.products.edges[number]["node"];
+export type ProductData =
+  typeof exampleProductData.data.products.edges[number]["node"];
 
 const ProductBoxContext = createContext<ProductData | undefined>(undefined);
 
@@ -254,9 +254,8 @@ export function ProductCollection({
   children,
   className,
 }: ProductCollectionProps) {
-  const [data, setData] = useState<typeof exampleProductData | undefined>(
-    undefined
-  );
+  const [data, setData] =
+    useState<typeof exampleProductData | undefined>(undefined);
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -352,9 +351,8 @@ interface CmsGalleryProps {
 }
 
 export function CmsGallery({ count, ...rest }: CmsGalleryProps) {
-  const [data, setData] = useState<typeof exampleCmsData | undefined>(
-    undefined
-  );
+  const [data, setData] =
+    useState<typeof exampleCmsData | undefined>(undefined);
   useEffect(() => {
     (async () => {
       const response = await fetch(
