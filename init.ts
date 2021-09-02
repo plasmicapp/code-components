@@ -17,6 +17,7 @@ import {
 } from "@material-ui/core";
 import {
   CmsGallery,
+  CmsItemField,
   ProductCollection,
   ProductGallery,
   ProductImage,
@@ -280,7 +281,7 @@ PLASMIC.registerComponent(ProductCollection, {
         "gifts",
       ],
     },
-    slider: "boolean",
+    scroller: "boolean",
     count: "number",
     children: "slot",
     columns: {
@@ -319,6 +320,26 @@ PLASMIC.registerComponent(CmsGallery, {
   props: {
     count: "number",
     scroller: "boolean",
+    children: "slot",
+    columns: {
+      type: "number",
+      defaultValue: 4,
+    },
+    columnGap: {
+      type: "number",
+      defaultValue: 16,
+    },
+    rowGap: {
+      type: "number",
+      defaultValue: 16,
+    },
+  },
+});
+
+PLASMIC.registerComponent(CmsItemField, {
+  name: "CmsItemField",
+  props: {
+    field: "string",
   },
 });
 
