@@ -1,6 +1,6 @@
 import { ComponentProps, useContext } from "react";
 import { Parallax } from "react-scroll-parallax";
-import { PlasmicCanvasContext } from "@plasmicapp/host";
+import { PlasmicCanvasContext } from "@plasmicapp/loader-nextjs/host";
 
 export function ParallaxWrapper(props: ComponentProps<typeof Parallax>) {
   const inEditor = useContext(PlasmicCanvasContext);

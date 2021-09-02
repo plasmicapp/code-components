@@ -10,7 +10,7 @@ import { BleepsProvider } from "@arwes/sounds";
 import { ArwesThemeProvider, StylesBaseline, Text, Figure } from "@arwes/core";
 import { useIntersection } from "react-use";
 import { ensure } from "../src/common";
-import { PlasmicCanvasContext } from "@plasmicapp/host";
+import { PlasmicCanvasContext } from "@plasmicapp/loader-nextjs/host";
 
 // For the font-family to work, you would have to setup the Google Fonts link:
 // <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" />
