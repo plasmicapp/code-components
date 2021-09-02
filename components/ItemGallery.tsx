@@ -10,19 +10,14 @@ import {
 
 import sty from "./ItemGallery.module.css";
 import classNames from "classnames";
-import { exampleCmsData, exampleProductData } from "./ItemGalleryExampleData";
+import {
+  exampleCmsData,
+  exampleCollectionData,
+  exampleProductData,
+} from "./ItemGalleryExampleData";
+import { repeatedElement } from "@plasmicapp/host";
 
-const productQuery = `
-query Products($first: Int!, $query: String, $sortKey: ProductSortKeys, $reverse: Boolean) {
-  products(first: $first, query: $query, sortKey: $sortKey, reverse: $reverse) {
-    edges {
-      node {
-        ...ProductFragment
-      }
-    }
-  }
-}
-
+const productFragment = `
 fragment ProductFragment on Product {
   availableForSale
   collections(first: 5) {
@@ -106,7 +101,37 @@ fragment ProductFragment on Product {
     }
   }
 }
-    `;
+`;
+
+const allProductsQuery = `
+query Products($first: Int!, $query: String, $sortKey: ProductSortKeys, $reverse: Boolean) {
+  products(first: $first, query: $query, sortKey: $sortKey, reverse: $reverse) {
+    edges {
+      node {
+        ...ProductFragment
+      }
+    }
+  }
+}
+
+${productFragment}
+`;
+
+const collectionQuery = `
+query Collection($handle:String!){
+  collectionByHandle(handle:$handle){
+    products(first:99){
+      edges{
+        node{
+          ...ProductFragment
+        }
+      }
+    }
+  }
+}
+
+${productFragment}
+`;
 
 interface ItemGalleryProps {
   scroller?: boolean;
@@ -170,8 +195,9 @@ export function ProductGallery({
   count,
   ...rest
 }: ProductGalleryProps) {
-  const [data, setData] =
-    useState<typeof exampleProductData | undefined>(undefined);
+  const [data, setData] = useState<typeof exampleProductData | undefined>(
+    undefined
+  );
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -193,7 +219,7 @@ export function ProductGallery({
           referrer: "https://shopify.dev/",
           referrerPolicy: "strict-origin-when-cross-origin",
           body: JSON.stringify({
-            query: productQuery,
+            query: allProductsQuery,
 
             variables: { first: 10 },
           }),
@@ -236,28 +262,39 @@ export function ProductGallery({
   );
 }
 
-export type ProductData =
-  typeof exampleProductData.data.products.edges[number]["node"];
+export type ProductData = typeof exampleProductData.data.products.edges[number]["node"];
 
 const ProductBoxContext = createContext<ProductData | undefined>(undefined);
 
 interface ProductCollectionProps {
   count?: number;
-  category?: string;
+  collectionHandle?: string;
   scroller?: boolean;
   className?: string;
   children?: ReactNode;
+  columns?: number;
+  columnGap?: number;
+  rowGap?: number;
+  slider?: boolean;
 }
 export function ProductCollection({
-  category,
+  collectionHandle,
   count,
   children,
   className,
+  columns = 1,
+  columnGap = 0,
+  rowGap = 0,
+  slider = false,
 }: ProductCollectionProps) {
-  const [data, setData] =
-    useState<typeof exampleProductData | undefined>(undefined);
+  const [data, setData] = useState<typeof exampleCollectionData | undefined>(
+    undefined
+  );
   useEffect(() => {
     (async () => {
+      if (!collectionHandle) {
+        return;
+      }
       const response = await fetch(
         "https://graphql.myshopify.com/api/2021-04/graphql.json",
         {
@@ -277,9 +314,8 @@ export function ProductCollection({
           referrer: "https://shopify.dev/",
           referrerPolicy: "strict-origin-when-cross-origin",
           body: JSON.stringify({
-            query: productQuery,
-
-            variables: { first: 10 },
+            query: collectionQuery,
+            variables: { handle: collectionHandle },
           }),
           method: "POST",
           mode: "cors",
@@ -289,21 +325,34 @@ export function ProductCollection({
       const data = await response.json();
       setData(data);
     })();
-  }, []);
+  }, [collectionHandle]);
 
-  return (
-    <div className={className}>
-      {data?.data.products.edges.slice(0, count).map((productEdge) => {
-        const product = productEdge.node;
-        if (category && category !== product.productType) {
-          return null;
-        }
-        return (
-          <ProductBoxContext.Provider value={product} key={product.id}>
-            <div className={sty.Item}>{children}</div>
-          </ProductBoxContext.Provider>
-        );
-      })}
+  const products = data?.data.collectionByHandle.products.edges
+    .slice(0, count)
+    .map((productEdge, i) => {
+      const product = productEdge.node;
+      return (
+        <ProductBoxContext.Provider value={product} key={product.id}>
+          <div>{repeatedElement(i === 0, children)}</div>
+        </ProductBoxContext.Provider>
+      );
+    });
+
+  return slider ? (
+    <ItemGallery className={className} scroller>
+      {products}
+    </ItemGallery>
+  ) : (
+    <div
+      className={className}
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        columnGap: `${columnGap}px`,
+        rowGap: `${rowGap}px`,
+      }}
+    >
+      {products}
     </div>
   );
 }
@@ -324,6 +373,9 @@ export function ProductImage({ className }: { className?: string }) {
       height={image.height}
       loading={"lazy"}
       className={className}
+      style={{
+        objectFit: "cover",
+      }}
     />
   );
 }
@@ -351,8 +403,9 @@ interface CmsGalleryProps {
 }
 
 export function CmsGallery({ count, ...rest }: CmsGalleryProps) {
-  const [data, setData] =
-    useState<typeof exampleCmsData | undefined>(undefined);
+  const [data, setData] = useState<typeof exampleCmsData | undefined>(
+    undefined
+  );
   useEffect(() => {
     (async () => {
       const response = await fetch(

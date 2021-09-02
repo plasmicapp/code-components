@@ -46,7 +46,7 @@ export const PLASMIC = initPlasmicLoader({
 //
 // Registration of code components
 //
-  
+
 PLASMIC.registerComponent(Slider, {
   name: "Slider",
   props: {
@@ -268,14 +268,35 @@ PLASMIC.registerComponent(ProductGallery, {
 
 PLASMIC.registerComponent(ProductCollection, {
   name: "ProductCollection",
+  displayName: "Product Collection",
   props: {
+    collectionHandle: {
+      type: "choice",
+      options: [
+        "latest-stuff",
+        "casual-things",
+        "summer-collection",
+        "services",
+        "gifts",
+      ],
+    },
+    slider: "boolean",
     count: "number",
     children: "slot",
-    category: {
-      type: "choice",
-      options: ["", "Boots", "Shirts", "Knitwear"],
+    columns: {
+      type: "number",
+      defaultValue: 4,
+    },
+    columnGap: {
+      type: "number",
+      defaultValue: 16,
+    },
+    rowGap: {
+      type: "number",
+      defaultValue: 16,
     },
   },
+  importPath: "./ProductComponents",
 });
 
 PLASMIC.registerComponent(ProductTitle, {
