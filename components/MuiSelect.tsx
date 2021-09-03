@@ -6,7 +6,7 @@ import {
   MenuItem as MuiMenuItem,
   Select,
 } from "@material-ui/core";
-import { PlasmicCanvasContext } from "@plasmicapp/loader-nextjs/host";
+import { PlasmicCanvasContext } from "@plasmicapp/loader-nextjs";
 
 export function MuiSelect({
   options,

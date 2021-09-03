@@ -15,7 +15,7 @@ import {
   exampleCollectionData,
   exampleProductData,
 } from "./ItemGalleryExampleData";
-import { repeatedElement } from "@plasmicapp/host";
+import { repeatedElement } from "@plasmicapp/loader-nextjs";
 
 const productFragment = `
 fragment ProductFragment on Product {

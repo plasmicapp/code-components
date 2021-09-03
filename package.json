@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -15,8 +15,7 @@
     "@emotion/css": "^11.1.3",
     "@emotion/react": "^11.4.0",
     "@material-ui/core": "^4.11.4",
-    "@plasmicapp/loader": "^0.0.58",
-    "@plasmicapp/loader-nextjs": "^1.0.16",
+    "@plasmicapp/loader-nextjs": "^1.0.18",
     "@react-google-maps/api": "^2.1.1",
     "@types/react": "^17.0.6",
     "animejs": "^3.2.1",

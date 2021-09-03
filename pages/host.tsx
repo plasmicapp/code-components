@@ -1,5 +1,5 @@
 import * as React from "react";
-import { PlasmicCanvasHost } from "@plasmicapp/loader-nextjs/host";
+import { PlasmicCanvasHost } from "@plasmicapp/loader-nextjs";
 import Head from "next/head";
 import "../init";
 
