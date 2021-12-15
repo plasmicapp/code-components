@@ -1,3 +1,5 @@
+/** @format */
+
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 import { Alert, Carousel, Collapse, Menu, Slider } from "antd";
 import MenuItem from "antd/lib/menu/MenuItem";
@@ -419,8 +421,7 @@ PLASMIC.registerComponent(Tilt, {
 PLASMIC.registerComponent(ParallaxWrapper, {
   name: "Parallax",
   props: {
-    x: "object",
-    y: "object",
+    speed: "number",
     disabled: "boolean",
     children: "slot",
   },
