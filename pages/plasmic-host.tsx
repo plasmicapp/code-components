@@ -1,7 +1,9 @@
+/** @format */
+
 import * as React from "react";
 import { PlasmicCanvasHost } from "@plasmicapp/loader-nextjs";
 import Head from "next/head";
-import "../init";
+import "../plasmic-init";
 
 function Host() {
   return (

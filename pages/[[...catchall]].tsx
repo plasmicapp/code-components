@@ -1,3 +1,5 @@
+/** @format */
+
 import * as React from "react";
 import {
   PlasmicComponent,
@@ -5,7 +7,7 @@ import {
   PlasmicRootProvider,
 } from "@plasmicapp/loader-nextjs";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { PLASMIC } from "../init";
+import { PLASMIC } from "../plasmic-init";
 import Error from "next/error";
 
 /**

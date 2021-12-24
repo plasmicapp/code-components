@@ -3,7 +3,7 @@ import Head from "next/head";
 import "../styles/globals.css";
 import "antd/dist/antd.css";
 import "react-vis/dist/style.css";
-import { ParallaxProvider } from "react-scroll-parallax";
+import { ParallaxProviderWrapper } from "../components/ParallaxWrapper";
 import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           key="maps"
         ></script>
       </Head>
-      <ParallaxProvider>
+      <ParallaxProviderWrapper>
         <Component {...pageProps} />
-      </ParallaxProvider>
+      </ParallaxProviderWrapper>
     </div>
   );
 }
