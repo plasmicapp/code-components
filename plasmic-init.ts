@@ -381,12 +381,12 @@ PLASMIC.registerComponent(Carousel, {
   },
 });
 
-PLASMIC.registerComponent(Embed, {
-  name: "Embed",
-  props: {
-    code: "string",
-  },
-});
+// PLASMIC.registerComponent(Embed, {
+//   name: "Embed",
+//   props: {
+//     code: "string",
+//   },
+// });
 
 PLASMIC.registerComponent(Tilt, {
   name: "Tilt",
