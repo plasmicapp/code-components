@@ -45,16 +45,6 @@ fragment ProductFragment on Product {
   metafield(key: "app_key", namespace: "affiliates") {
     description
   }
-  metafields(first: 5) {
-    edges {
-      node {
-        key
-        description
-        value
-        valueType
-      }
-    }
-  }
   onlineStoreUrl
   options {
     name
